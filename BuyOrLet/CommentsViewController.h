@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AFNEtworking.h>
+#import "Comment.h"
+
 
 @interface CommentsViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 
