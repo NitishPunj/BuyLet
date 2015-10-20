@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14F27" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Advert" representedClassName="Advert" syncable="YES">
+        <attribute name="agentName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="agentNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="detailURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="displayableAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="floorPlanURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="houseType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="listingID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="listingStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rentalPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shortDescripton" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumpnailImageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userComment" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="userComment" inverseEntity="Comment" syncable="YES"/>
+    </entity>
+    <entity name="Comment" representedClassName="Comment" syncable="YES">
+        <attribute name="commentText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="listingID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 64" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userComment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Advert" inverseName="userComment" inverseEntity="Advert" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Advert" positionX="205" positionY="96" width="128" height="253"/>
+        <element name="Comment" positionX="-63" positionY="81" width="128" height="118"/>
+    </elements>
+</model>
