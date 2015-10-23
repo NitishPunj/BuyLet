@@ -15,6 +15,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *priceLabel;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *progressIndicator;
 
+@property (strong, nonatomic) IBOutlet UIButton *actionbutton;
 
+//- (void)setDidTapButtonBlock:(void (^)(id sender))didTapButtonBlock;
 
 @end

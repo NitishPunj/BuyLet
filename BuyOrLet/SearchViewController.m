@@ -10,6 +10,7 @@
 #import "PropertyListing.h"
 #import "ResultsViewController.h"
 #import "AppDelegate.h"
+#import "MBProgressHUD.h"
 
 static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/property_listings.json?";
 
@@ -28,14 +29,7 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
 
 }
 
-//- (NSManagedObjectContext *)managedObjectContext {
-//    NSManagedObjectContext *context = nil;
-//    id delegate = [[UIApplication sharedApplication] delegate];
-//    if ([delegate performSelector:@selector(managedObjectContext)]) {
-//        context = [delegate managedObjectContext];
-//    }
-//    return context;
-//}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -107,7 +101,8 @@ AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager]
                          resultsFound = NO;
                          [alert show];
                          
-                          [self.spinningWheel stopAnimating];
+                         // [self.spinningWheel stopAnimating];
+                         [MBProgressHUD hideHUDForView:self.view animated:YES];
                      }
                      else{
                          
@@ -118,7 +113,8 @@ AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager]
                          resultsFound = NO;
                          [alert show];
                          
-                          [self.spinningWheel stopAnimating];
+                         // [self.spinningWheel stopAnimating];
+                         [MBProgressHUD hideHUDForView:self.view animated:YES];
                      }
                  }
                  
@@ -138,7 +134,8 @@ AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager]
         resultsFound = NO;
         [alert show];
 
-         [self.spinningWheel stopAnimating];
+        // [self.spinningWheel stopAnimating];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         return;
         
         
@@ -197,7 +194,9 @@ AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager]
             
    
            ResultsViewController *myController = [self.storyboard instantiateViewControllerWithIdentifier:@"TableResults"];
-         [self.spinningWheel stopAnimating];
+         //[self.spinningWheel stopAnimating];
+         [MBProgressHUD hideHUDForView:self.view animated:YES];
+            
             
           myController.tableArray = [[NSMutableArray alloc] initWithArray:resultsArray];
            // [myController.tableResults reloadData];
@@ -212,11 +211,20 @@ AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager]
 
 
 - (IBAction)searchProperties:(id)sender {
-    //On button press, we will empty the previos reuslts and then will go to the json fetch method
+    //On button press, we will empty the previous reuslts and then will go to the json fetch method
     [resultsArray removeAllObjects];
-    [self.spinningWheel startAnimating];
+   
+    //[self.spinningWheel startAnimating];
+   //Third Party Library showing progress view
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
      [self jsonFetch];
+    
+    
+    
+    
+    
+    
     /*
      if internet{
      delete all data from core data

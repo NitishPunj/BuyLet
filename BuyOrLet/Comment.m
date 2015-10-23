@@ -2,7 +2,7 @@
 //  Comment.m
 //  BuyOrLet
 //
-//  Created by TAE on 15/10/2015.
+//  Created by TAE on 21/10/2015.
 //  Copyright (c) 2015 TAE. All rights reserved.
 //
 
@@ -12,10 +12,11 @@
 
 @implementation Comment
 
-@dynamic listingID;
-@dynamic userName;
-@dynamic userID;
 @dynamic commentText;
+@dynamic listingID;
+@dynamic userID;
+@dynamic userName;
+@dynamic dateAdded;
 @dynamic userComment;
 
 @end

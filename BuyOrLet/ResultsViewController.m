@@ -11,6 +11,7 @@
 #import "CustomCell.h"
 #import "DetailViewController.h"
 #import "UIImageView+AFNetworking.h"
+#import "CommentsViewController.h"
 
 @interface ResultsViewController ()
 
@@ -68,6 +69,9 @@
     
     
     [cell.priceLabel setText:tempTitle];
+    [cell.actionbutton setTag:indexPath.row];
+     [cell.actionbutton addTarget:self action:@selector(didTapButton:) forControlEvents:UIControlEventTouchUpInside];
+    
     NSString *strThumbnailURL = pL.thumbpailImageURL;
     if(strThumbnailURL!=nil)
     {
@@ -183,15 +187,64 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     
-    
-    NSIndexPath *indexPath = [self.tableResults indexPathForSelectedRow];
+    if ([segue.identifier isEqualToString:@"DetailSegue"])
+    {
+     NSIndexPath *indexPath = [self.tableResults indexPathForSelectedRow];
+   
     PropertyListing *item = self.tableArray[indexPath.row];
+        
+        NSLog(@"%@ this listing id",item.listingID);
+        
+        NSLog(@"%@ this listing id",item.listingID);
+        
+
     
     DetailViewController *viewController = [segue destinationViewController];
     viewController.item = item;
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+        
+    }
+    
+        
 }
+
+
+- (void)didTapButton:(id)sender {
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+    
+    
+    UIButton *button = (UIButton *)sender;
+    
+    // Find Point in Superview
+    // Not very efficient to use so  I used [button.tag]
+    //    CGPoint pointInSuperview = [button.superview convertPoint:button.center toView:self.tableResults];
+    //
+    //    // Infer Index Path
+    //    NSIndexPath *indexPath = [self.tableResults indexPathForRowAtPoint:pointInSuperview];
+    //    PropertyListing *item = self.tableArray[indexPath.row];
+    //
+    
+  PropertyListing *   item = self.tableArray[button.tag];
+    
+    
+    NSLog(@"%@ this listing id",item.listingID);
+    
+    NSLog(@"%@ this listing id",item.listingID);
+    
+    NSLog(@"%ld this listing id",(long)button.tag);
+    
+    
+    
+    CommentsViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CommentsTable"];
+    
+    viewController.listingCategoryString = item.listingID;
+    
+    [self.navigationController pushViewController:viewController
+                                         animated:YES];
+    
+}
+
+
+
 
 
 @end

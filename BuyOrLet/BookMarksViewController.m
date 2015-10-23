@@ -146,7 +146,10 @@
         
         
         
-//        
+//  ------  Using AF Networking for downloading images but the below code can  be used instead----------------
+        
+        
+        
 //        dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 //        //this will start the image loading in background
 //        dispatch_async(concurrentQueue, ^{
@@ -239,6 +242,9 @@
         
     
     
+}
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return @"Delete\nBookmark";
 }
 
 

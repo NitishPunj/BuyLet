@@ -8,14 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <AFNEtworking.h>
-#import "Comment.h"
 
 
-@interface CommentsViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+
+@interface CommentsViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UIImageView *mainImage;
 @property (strong, nonatomic) IBOutlet UITableView *commentsTable;
 @property (strong, nonatomic) IBOutlet UITextField *commentText;
 - (IBAction)post:(id)sender;
+
+
+@property(strong,nonatomic)   NSString *listingCategoryString;
 
 @end

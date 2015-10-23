@@ -94,8 +94,8 @@
                   }];
     
            
-           //   Was taking longer to download images so used the above code instead
-//
+        // I guessbelow code was taking longer to download images so used the above code instead but doesnt make much difference
+
 //    AFHTTPRequestOperation *requestOperation = [[AFHTTPRequestOperation alloc] initWithRequest:url];
 //    requestOperation.responseSerializer = [AFImageResponseSerializer serializer];
 //    [requestOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -115,7 +115,7 @@
 //    
 //
 //    [requestOperation start];
-           
+//           
           
     
     }
