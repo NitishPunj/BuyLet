@@ -23,25 +23,5 @@
 @property (strong,nonatomic) NSString * shortDescription;
 @property (strong,nonatomic) NSString * thumbpailImageURL;
 //@property (strong,nonatomic) NSDictionary * rentDictionary;
-/*
- 
- 
- @property (nonatomic, retain) NSString * agentName;
- @property (nonatomic, retain) NSNumber * agentNumber;
- @property (nonatomic, retain) NSString * fullDescription;
- @property (nonatomic, retain) NSString * displayableAddress;
- @property (nonatomic, retain) NSString * floorPlanURL;
- @property (nonatomic, retain) NSString * imageURL;
- @property (nonatomic, retain) NSNumber * listingID;
- @property (nonatomic, retain) NSString * listingStatus;
- @property (nonatomic, retain) NSString * houseType;
- @property (nonatomic, retain) NSString * rentalPrice;
- @property (nonatomic, retain) NSString * shortDescripton;
- @property (nonatomic, retain) NSString * thumpnailImageURL;
- @property (nonatomic, retain) NSString * detailURL;
- @property (nonatomic, retain) NSSet *userComment;
- @end
- 
- */
 
 @end

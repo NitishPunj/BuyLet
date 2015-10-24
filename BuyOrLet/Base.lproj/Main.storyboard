@@ -552,11 +552,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="350" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nQj-ar-mtB">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="104" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nQj-ar-mtB">
                                 <rect key="frame" x="0.0" y="175" width="350" height="169"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" textLabel="LFD-pg-VDO" detailTextLabel="zgo-tY-rrM" rowHeight="69" style="IBUITableViewCellStyleValue2" id="g3a-jy-1zg">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" textLabel="LFD-pg-VDO" detailTextLabel="zgo-tY-rrM" rowHeight="104" style="IBUITableViewCellStyleValue2" id="g3a-jy-1zg">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g3a-jy-1zg" id="GsH-kV-OVE">
@@ -583,6 +583,12 @@
                                     <outlet property="delegate" destination="4xj-fa-FcG" id="cqS-rS-h36"/>
                                 </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="tuV-Us-Sbg">
+                                <rect key="frame" x="70" y="28" width="210" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="YNB-4U-qbJ"/>
+                                </constraints>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1EU-Dn-Pd0">
                                 <rect key="frame" x="8" y="379" width="295" height="30"/>
                                 <constraints>
@@ -603,22 +609,63 @@
                                     <action selector="post:" destination="4xj-fa-FcG" eventType="touchUpInside" id="05r-zC-P5a"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="tuV-Us-Sbg">
-                                <rect key="frame" x="70" y="28" width="210" height="128"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LbF-Lq-ARS">
+                                <rect key="frame" x="51" y="119" width="229" height="304"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXC-cz-xtT">
+                                        <rect key="frame" x="91" y="252" width="48" height="30"/>
+                                        <state key="normal" title="update">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateButton:" destination="4xj-fa-FcG" eventType="touchUpInside" id="12G-1m-kTl"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMe-uZ-jiD">
+                                        <rect key="frame" x="17" y="49" width="195" height="183"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVH-c0-hu3">
+                                        <rect key="frame" x="17" y="11" width="48" height="30"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelEditButton:" destination="4xj-fa-FcG" eventType="touchUpInside" id="MF5-RG-doS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="YNB-4U-qbJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="KVH-c0-hu3" secondAttribute="trailing" constant="164" id="4fw-Wy-PNh"/>
+                                    <constraint firstItem="hMe-uZ-jiD" firstAttribute="top" secondItem="LbF-Lq-ARS" secondAttribute="top" constant="49" id="Lx7-Ft-kca"/>
+                                    <constraint firstItem="tXC-cz-xtT" firstAttribute="leading" secondItem="LbF-Lq-ARS" secondAttribute="leading" constant="91" id="MjZ-Nz-Nje"/>
+                                    <constraint firstAttribute="trailing" secondItem="tXC-cz-xtT" secondAttribute="trailing" constant="90" id="NCS-VL-JsR"/>
+                                    <constraint firstAttribute="bottom" secondItem="tXC-cz-xtT" secondAttribute="bottom" constant="22" id="Suk-1L-tb2"/>
+                                    <constraint firstAttribute="trailing" secondItem="hMe-uZ-jiD" secondAttribute="trailing" constant="17" id="Xba-WX-XNj"/>
+                                    <constraint firstItem="tXC-cz-xtT" firstAttribute="top" secondItem="hMe-uZ-jiD" secondAttribute="bottom" constant="20" id="YJw-Tl-EIB"/>
+                                    <constraint firstItem="KVH-c0-hu3" firstAttribute="leading" secondItem="LbF-Lq-ARS" secondAttribute="leading" constant="17" id="YcK-2T-cgF"/>
+                                    <constraint firstItem="KVH-c0-hu3" firstAttribute="top" secondItem="LbF-Lq-ARS" secondAttribute="top" constant="11" id="c1n-2W-3tT"/>
+                                    <constraint firstItem="hMe-uZ-jiD" firstAttribute="top" secondItem="KVH-c0-hu3" secondAttribute="bottom" constant="8" id="iq4-X2-Jcm"/>
+                                    <constraint firstItem="hMe-uZ-jiD" firstAttribute="leading" secondItem="LbF-Lq-ARS" secondAttribute="leading" constant="17" id="qn1-je-Tdb"/>
+                                    <constraint firstItem="tXC-cz-xtT" firstAttribute="top" secondItem="hMe-uZ-jiD" secondAttribute="bottom" constant="20" id="ubI-y1-LBy"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1EU-Dn-Pd0" firstAttribute="leading" secondItem="hCu-ZN-f8Y" secondAttribute="leadingMargin" constant="-8" id="0QF-8i-Nzx"/>
                             <constraint firstItem="7sR-ok-oCv" firstAttribute="leading" secondItem="1EU-Dn-Pd0" secondAttribute="trailing" constant="19" id="2hr-S4-JTw"/>
                             <constraint firstItem="nQj-ar-mtB" firstAttribute="leading" secondItem="hCu-ZN-f8Y" secondAttribute="leading" id="2lg-NZ-Wb5"/>
+                            <constraint firstItem="LbF-Lq-ARS" firstAttribute="top" secondItem="Zwn-R0-UoI" secondAttribute="bottom" constant="99" id="F1h-aF-BcI"/>
                             <constraint firstAttribute="trailing" secondItem="nQj-ar-mtB" secondAttribute="trailing" id="Jf3-f0-RBc"/>
                             <constraint firstItem="nQj-ar-mtB" firstAttribute="top" secondItem="tuV-Us-Sbg" secondAttribute="bottom" constant="19" id="Keq-OS-fYx"/>
                             <constraint firstItem="tuV-Us-Sbg" firstAttribute="leading" secondItem="hCu-ZN-f8Y" secondAttribute="leadingMargin" constant="54" id="PDE-H5-s86"/>
+                            <constraint firstItem="LbF-Lq-ARS" firstAttribute="leading" secondItem="hCu-ZN-f8Y" secondAttribute="leading" constant="51" id="VCM-PY-7ao"/>
                             <constraint firstItem="7sR-ok-oCv" firstAttribute="top" secondItem="1EU-Dn-Pd0" secondAttribute="top" id="b84-QL-dCs"/>
+                            <constraint firstItem="L7t-wJ-pVY" firstAttribute="top" secondItem="LbF-Lq-ARS" secondAttribute="bottom" constant="77" id="dEw-j9-IUa"/>
                             <constraint firstItem="L7t-wJ-pVY" firstAttribute="top" secondItem="nQj-ar-mtB" secondAttribute="bottom" priority="250" constant="156" id="gnj-cS-jOq"/>
                             <constraint firstItem="tuV-Us-Sbg" firstAttribute="top" secondItem="Zwn-R0-UoI" secondAttribute="bottom" constant="8" symbolic="YES" id="kKK-wg-ybp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tuV-Us-Sbg" secondAttribute="trailing" constant="54" id="oeR-L9-PoE"/>
@@ -631,6 +678,8 @@
                     <connections>
                         <outlet property="commentText" destination="1EU-Dn-Pd0" id="sjG-iL-2u5"/>
                         <outlet property="commentsTable" destination="nQj-ar-mtB" id="ecq-Wp-Ai9"/>
+                        <outlet property="editCommentView" destination="LbF-Lq-ARS" id="Osc-SG-Bt7"/>
+                        <outlet property="editTextbox" destination="hMe-uZ-jiD" id="QP9-lc-5T3"/>
                         <outlet property="mainImage" destination="tuV-Us-Sbg" id="tGN-aO-tcZ"/>
                     </connections>
                 </viewController>

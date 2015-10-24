@@ -146,7 +146,7 @@
         
         
         
-//  ------  Using AF Networking for downloading images but the below code can  be used instead----------------
+//  ------  Using AF Networking for downloading images now, but the below code can  be used instead----------------
         
         
         

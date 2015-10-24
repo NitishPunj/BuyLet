@@ -17,6 +17,10 @@
 @property (strong, nonatomic) IBOutlet UITableView *commentsTable;
 @property (strong, nonatomic) IBOutlet UITextField *commentText;
 - (IBAction)post:(id)sender;
+@property (strong, nonatomic) IBOutlet UIView *editCommentView;
+@property (strong, nonatomic) IBOutlet UITextView *editTextbox;
+- (IBAction)updateButton:(id)sender;
+- (IBAction)cancelEditButton:(id)sender;
 
 
 @property(strong,nonatomic)   NSString *listingCategoryString;

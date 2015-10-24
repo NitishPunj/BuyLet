@@ -22,7 +22,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    
+    refreshControl.backgroundColor = [UIColor purpleColor];
+    refreshControl.tintColor = [UIColor whiteColor];
+    [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+    [self.tableResults addSubview:refreshControl];
+
+}
+
+
+- (void)refresh:(UIRefreshControl *)refreshControl {
+    // Do your job, when done:
+    [self.tableResults reloadData];
+    
+    
+    if(refreshControl){
+    
+    
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"MMM d, h:mm a"];
+    NSString *title = [NSString stringWithFormat:@"Last update: %@", [formatter stringFromDate:[NSDate date]]];
+    NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:[UIColor whiteColor]
+                                                                forKey:NSForegroundColorAttributeName];
+    NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:title attributes:attrsDictionary];
+    refreshControl.attributedTitle = attributedTitle;
+    
+    [refreshControl endRefreshing];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,16 +63,47 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
     if(_tableArray != nil)
-    return 1;
-    else{
-        UIAlertView *view = [[UIAlertView alloc]initWithTitle:@"Ambiguous data" message:@"Please be more precise" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     
-    [view show];
+    {
 
-    return  0;
+            
+         if([_tableArray count] < 1)
+             
+             
+            {
+                
+                UILabel *messageLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.tableResults.bounds.size.width, self.tableResults.bounds.size.height)];
+                
+                messageLabel.text = @"Ambiguition in Area field.  Please try using postcode";
+                messageLabel.textColor = [UIColor blackColor];
+                messageLabel.numberOfLines = 0;
+                messageLabel.textAlignment = NSTextAlignmentCenter;
+                messageLabel.font = [UIFont fontWithName:@"Palatino-Italic" size:20];
+                [messageLabel sizeToFit];
+                
+                self.tableResults.backgroundView = messageLabel;
+                self.tableResults.separatorStyle = UITableViewCellSeparatorStyleNone;
+                
+    
+                
+                return 0;
+                
+            }
+        
+        
+        else
+        return 1;
     }
     
+    return 0;
+    
+    
+    
 }
+
+
+
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
@@ -90,18 +149,22 @@
             
         //this will set the image when loading is finished
         dispatch_async(dispatch_get_main_queue(), ^{
+            //testing with begin updates for a cell at row instead of reloading the whole table
+          //  [self.tableResults beginUpdates];
             cell.thumbnailImage.image = [UIImage imageWithData:image];
-            //reload will display the images
-            [self.tableResults reloadData];
+           // [self.tableResults endUpdates];
+            
         });
             
         }
         else {
             dispatch_async(dispatch_get_main_queue(), ^{
-                cell.thumbnailImage.image = [UIImage imageNamed:@"house.jpeg"];
-                //reload will display the images
-                [self.tableResults reloadData];
                 
+       
+            cell.thumbnailImage.image = [UIImage imageNamed:@"house.jpeg"];
+                
+       
+
             });
         
         }
@@ -119,10 +182,10 @@
     
     else {
         dispatch_async(dispatch_get_main_queue(), ^{
-            cell.thumbnailImage.image = [UIImage imageNamed:@"house"];
-            //reload will display the images
-            [self.tableResults reloadData];
             
+     
+            cell.thumbnailImage.image = [UIImage imageNamed:@"house"];
+                   
         });
         
         [cell.progressIndicator stopAnimating];
@@ -148,9 +211,26 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
         [_tableArray removeObjectAtIndex:indexPath.row];
+        
+        
+
+           [self.tableResults beginUpdates];
+
+        
+        
+        
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
         
-        [_tableResults reloadData];
+      //    just for future use to be used, as it will reload a prticular row rather than reloading the whole table
+//        [self.tableResults reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationMiddle];
+//        
+        
+
+        
+        
+          [self.tableResults endUpdates];
+
+       // [_tableResults reloadData]; no need to reload whole table
     }
 
 }
@@ -192,12 +272,7 @@
      NSIndexPath *indexPath = [self.tableResults indexPathForSelectedRow];
    
     PropertyListing *item = self.tableArray[indexPath.row];
-        
-        NSLog(@"%@ this listing id",item.listingID);
-        
-        NSLog(@"%@ this listing id",item.listingID);
-        
-
+      
     
     DetailViewController *viewController = [segue destinationViewController];
     viewController.item = item;
@@ -209,29 +284,29 @@
 
 
 - (void)didTapButton:(id)sender {
-    NSLog(@"%s", __PRETTY_FUNCTION__);
-    
-    
+       
     UIButton *button = (UIButton *)sender;
     
     // Find Point in Superview
-    // Not very efficient to use so  I used [button.tag]
     //    CGPoint pointInSuperview = [button.superview convertPoint:button.center toView:self.tableResults];
     //
     //    // Infer Index Path
     //    NSIndexPath *indexPath = [self.tableResults indexPathForRowAtPoint:pointInSuperview];
     //    PropertyListing *item = self.tableArray[indexPath.row];
-    //
+    
+    
+    // In the above code: Not that level of precision required so  I used [button.tag] instead : cell for row at index path method assigns a tab to every button which is used in this methood to get the property Listing ID which is passed to the Comments View Controller
+
     
   PropertyListing *   item = self.tableArray[button.tag];
-    
-    
-    NSLog(@"%@ this listing id",item.listingID);
-    
-    NSLog(@"%@ this listing id",item.listingID);
-    
-    NSLog(@"%ld this listing id",(long)button.tag);
-    
+//    
+//    
+//    NSLog(@"%@ this listing id",item.listingID);
+//    
+//    NSLog(@"%@ this listing id",item.listingID);
+//    
+//    NSLog(@"%ld this listing id",(long)button.tag);
+//    
     
     
     CommentsViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CommentsTable"];

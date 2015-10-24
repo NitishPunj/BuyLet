@@ -171,10 +171,10 @@
 			isa = PBXGroup;
 			children = (
 				03D1870C1BCC0B63001652FC /* View Controllers */,
-				03B7711C1BC14F2C009FBD7B /* AppDelegate.h */,
-				03B7711D1BC14F2C009FBD7B /* AppDelegate.m */,
 				03D1870B1BCC0A33001652FC /* CoreData */,
 				03D1870D1BCC0BE5001652FC /* CustomCellClass */,
+				03B7711C1BC14F2C009FBD7B /* AppDelegate.h */,
+				03B7711D1BC14F2C009FBD7B /* AppDelegate.m */,
 				03B771221BC14F2C009FBD7B /* ViewController.h */,
 				03B771231BC14F2C009FBD7B /* ViewController.m */,
 				03D867FD1BC5156F006D7C62 /* Main.storyboard */,

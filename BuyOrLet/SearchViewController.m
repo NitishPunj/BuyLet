@@ -89,7 +89,7 @@ AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager]
              failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                  NSLog(@"Error: %@", error);
                  if(error!=nil){
-                     [self.spinningWheel stopAnimating];
+                   //  [self.spinningWheel stopAnimating];
                      
                      NSInteger statusErrorCode = [operation.response statusCode];
                      
@@ -220,29 +220,7 @@ AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager]
     
      [self jsonFetch];
     
-    
-    
-    
-    
-    
-    /*
-     if internet{
-     delete all data from core data
-     fetch data from webservices
 
-     
-     [resultsArray removeAllObjects];
-     [self.spinningWheel startAnimating];
-     
-     [self jsonFetch];
-     }
-     else{
-     connect to core data
-     get all data 
-     add to array
-     send array to next table view controller
-     }
-     */
 }
 
 //
