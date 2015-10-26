@@ -1,6 +1,7 @@
 //
 //  BookMarksViewController.m
 //  BuyOrLet
+//SMS and Mail functionaltiy added to support Communication between buyer and seller
 //
 //  Created by TAE on 05/10/2015.
 //  Copyright (c) 2015 TAE. All rights reserved.
@@ -13,7 +14,7 @@
 #import "UIImageView+AFNetworking.h"
 #import <MessageUI/MessageUI.h>
 
-@interface BookMarksViewController ()<MFMessageComposeViewControllerDelegate>{
+@interface BookMarksViewController ()<MFMessageComposeViewControllerDelegate,MFMailComposeViewControllerDelegate>{
 
     NSMutableArray * bookmarkArray;
     NSMutableArray * filteredData;
@@ -49,10 +50,12 @@
     else
         pL = [bookmarkArray objectAtIndex:[indexPath row]];
     
-    NSString * stringNumber = pL.agentNumber;
+   NSString * stringNumber = pL.agentNumber;
     NSString * agentName = pL.agentName;
-    [self showSMS:stringNumber:agentName];
-        
+
+   // [self showSMS:stringNumber:agentName];
+    [self showEmail:agentName :stringNumber];
+
 
     
 }
@@ -65,18 +68,88 @@
         return;
     }
     
-    NSArray *recipents = @[numb];
+    NSArray *recipent =[NSArray arrayWithObject:numb];
     NSString *message = [NSString stringWithFormat:@"Hello %@", name];
     
     MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
     messageController.messageComposeDelegate = self;
-    [messageController setRecipients:recipents];
+    [messageController setRecipients:recipent];
     [messageController setBody:message];
     
     // Present message view controller on screen
     [self presentViewController:messageController animated:YES completion:nil];
 }
 
+
+
+- (void)showEmail:(NSString*)file :(NSString*)agentNumber {
+    
+    NSString *emailTitle = @"Property Enquiry";
+    NSString *messageBody = @"Hello !";
+    NSArray *toRecipents = [NSArray arrayWithObject:@"punj.nitish@gmail.com"];
+    
+    MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
+    mc.mailComposeDelegate = self;
+    [mc setSubject:emailTitle];
+    [mc setMessageBody:messageBody isHTML:NO];
+    [mc setToRecipients:toRecipents];
+    
+    // Determine the file name and extension if need to add an attachement
+    //NSArray *filepart = [file componentsSeparatedByString:@"."];
+  //  NSString *filename = [filepart objectAtIndex:0];
+   // NSString *extension = [filepart objectAtIndex:0];
+    
+    // Get the resource path and read the file using NSData
+  //  NSString *filePath = [[NSBundle mainBundle] pathForResource:filename ofType:extension];
+   // NSData *fileData = [NSData dataWithContentsOfFile:filePath];
+    
+//    // Determine the MIME type
+//    NSString *mimeType;
+//    if ([extension isEqualToString:@"jpg"]) {
+//        mimeType = @"image/jpeg";
+//    } else if ([extension isEqualToString:@"png"]) {
+//        mimeType = @"image/png";
+//    } else if ([extension isEqualToString:@"doc"]) {
+//        mimeType = @"application/msword";
+//    } else if ([extension isEqualToString:@"ppt"]) {
+//        mimeType = @"application/vnd.ms-powerpoint";
+//    } else if ([extension isEqualToString:@"html"]) {
+//        mimeType = @"text/html";
+//    } else if ([extension isEqualToString:@"pdf"]) {
+//        mimeType = @"application/pdf";
+//    }
+//    
+//    // Add attachment
+//    [mc addAttachmentData:fileData mimeType:mimeType fileName:filename];
+//    
+    // Present mail view controller on screen
+    [self presentViewController:mc animated:YES completion:NULL];
+    
+}
+
+- (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+            NSLog(@"Mail cancelled");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"Mail saved");
+            break;
+        case MFMailComposeResultSent:
+            NSLog(@"Mail sent");
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"Mail sent failure: %@", [error localizedDescription]);
+            break;
+        default:
+            break;
+    }
+    
+    // Close the Mail Interface
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
 
 
 
