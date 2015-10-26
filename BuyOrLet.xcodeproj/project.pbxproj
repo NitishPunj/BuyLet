@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0349BDE11BDEBF410033763B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0349BDE01BDEBF410033763B /* Social.framework */; };
 		03601CDE1BC2B123005FD919 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03601CDD1BC2B123005FD919 /* DetailViewController.m */; };
 		03601CE11BC2B146005FD919 /* BookMarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03601CE01BC2B146005FD919 /* BookMarksViewController.m */; };
 		03601CE41BC2B173005FD919 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03601CE31BC2B173005FD919 /* SearchViewController.m */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0349BDE01BDEBF410033763B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		03601CDC1BC2B123005FD919 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		03601CDD1BC2B123005FD919 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		03601CDF1BC2B146005FD919 /* BookMarksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarksViewController.h; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0349BDE11BDEBF410033763B /* Social.framework in Frameworks */,
 				03D8683F1BC80450006D7C62 /* MessageUI.framework in Frameworks */,
 				421503605A5326F5383C6C9E /* libPods-BuyOrLet.a in Frameworks */,
 			);
@@ -269,6 +272,7 @@
 		6FA5A3F0EC00AD7137F33C74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0349BDE01BDEBF410033763B /* Social.framework */,
 				03D8683E1BC80450006D7C62 /* MessageUI.framework */,
 				7980C426EEB6A96F17A99331 /* libPods-BuyOrLet.a */,
 			);

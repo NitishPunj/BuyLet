@@ -11,9 +11,9 @@
 #import "AppDelegate.h"
 #import "Advert.h"
 #import "UIImageView+AFNetworking.h"
+#import <MessageUI/MessageUI.h>
 
-
-@interface BookMarksViewController (){
+@interface BookMarksViewController ()<MFMessageComposeViewControllerDelegate>{
 
     NSMutableArray * bookmarkArray;
     NSMutableArray * filteredData;
@@ -37,6 +37,48 @@
     
     
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    Advert *pL;
+    
+    if(isFiltered)
+    { pL = [filteredData objectAtIndex:[indexPath row]];
+    }
+    else
+        pL = [bookmarkArray objectAtIndex:[indexPath row]];
+    
+    NSString * stringNumber = pL.agentNumber;
+    NSString * agentName = pL.agentName;
+    [self showSMS:stringNumber:agentName];
+        
+
+    
+}
+
+- (void)showSMS:(NSString*)numb :(NSString*)name {
+    
+    if(![MFMessageComposeViewController canSendText]) {
+        UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Your device doesn't support SMS!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [warningAlert show];
+        return;
+    }
+    
+    NSArray *recipents = @[numb];
+    NSString *message = [NSString stringWithFormat:@"Hello %@", name];
+    
+    MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
+    messageController.messageComposeDelegate = self;
+    [messageController setRecipients:recipents];
+    [messageController setBody:message];
+    
+    // Present message view controller on screen
+    [self presentViewController:messageController animated:YES completion:nil];
+}
+
+
+
 
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -140,7 +182,7 @@
         
         
         
-//  ------  Using AF Networking for downloading images now, but the below code can  be used instead----------------
+//  ------  Using AF Networking for downloading images now, but the below code can  be used instead----------------  AF networking works better as it cashes the images and make them availe in offline mode for  a time
         
         
         
@@ -264,6 +306,33 @@ if(isFiltered)
     else
     return [bookmarkArray count];
 }
+
+
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult) result
+{
+    switch (result) {
+        case MessageComposeResultCancelled:
+            break;
+            
+        case MessageComposeResultFailed:
+        {
+            UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Failed to send SMS!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [warningAlert show];
+            break;
+        }
+            
+        case MessageComposeResultSent:
+            break;
+            
+        default:
+            break;
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 
 
 /*
