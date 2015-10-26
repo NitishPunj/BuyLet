@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "PropertyListing.h"
 #import "AppDelegate.h"
+#import <AddressBookUI/AddressBookUI.h>
 
-@interface DetailViewController : UIViewController<UIScrollViewDelegate>
+@interface DetailViewController : UIViewController
 
 @property(strong,nonatomic) PropertyListing *item;
 @property (weak
@@ -19,6 +20,9 @@
 
 @property (strong, nonatomic) IBOutlet UITextView *detailDesciption;
 
+- (IBAction)addContact:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UILabel *agentName;
 
 @property (strong,nonatomic) NSManagedObjectContext *context;
 @property (strong,nonatomic) NSFetchedResultsController *fetchedResultsController;

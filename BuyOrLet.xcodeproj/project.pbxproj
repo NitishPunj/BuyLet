@@ -14,7 +14,6 @@
 		03B7711B1BC14F2C009FBD7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7711A1BC14F2C009FBD7B /* main.m */; };
 		03B7711E1BC14F2C009FBD7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7711D1BC14F2C009FBD7B /* AppDelegate.m */; };
 		03B771211BC14F2C009FBD7B /* BuyOrLet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03B7711F1BC14F2C009FBD7B /* BuyOrLet.xcdatamodeld */; };
-		03B771241BC14F2C009FBD7B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B771231BC14F2C009FBD7B /* ViewController.m */; };
 		03B771291BC14F2C009FBD7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B771281BC14F2C009FBD7B /* Images.xcassets */; };
 		03B7712C1BC14F2C009FBD7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B7712A1BC14F2C009FBD7B /* LaunchScreen.xib */; };
 		03B771381BC14F2C009FBD7B /* BuyOrLetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B771371BC14F2C009FBD7B /* BuyOrLetTests.m */; };
@@ -54,8 +53,6 @@
 		03B7711C1BC14F2C009FBD7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03B7711D1BC14F2C009FBD7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		03B771201BC14F2C009FBD7B /* BuyOrLet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BuyOrLet.xcdatamodel; sourceTree = "<group>"; };
-		03B771221BC14F2C009FBD7B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		03B771231BC14F2C009FBD7B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		03B771281BC14F2C009FBD7B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		03B7712B1BC14F2C009FBD7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		03B771311BC14F2C009FBD7B /* BuyOrLetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuyOrLetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0349BDDF1BDE3CCD0033763B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03D868381BC6621A006D7C62 /* PropertyListing.h */,
+				03D868391BC6621A006D7C62 /* PropertyListing.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		03601CE51BC2B1A6005FD919 /* BookMarks */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,8 +120,6 @@
 			children = (
 				03601CE31BC2B173005FD919 /* SearchViewController.m */,
 				03601CE21BC2B173005FD919 /* SearchViewController.h */,
-				03D868381BC6621A006D7C62 /* PropertyListing.h */,
-				03D868391BC6621A006D7C62 /* PropertyListing.m */,
 			);
 			name = SearchMain;
 			sourceTree = "<group>";
@@ -170,13 +174,12 @@
 		03B771171BC14F2C009FBD7B /* BuyOrLet */ = {
 			isa = PBXGroup;
 			children = (
+				0349BDDF1BDE3CCD0033763B /* Model */,
 				03D1870C1BCC0B63001652FC /* View Controllers */,
 				03D1870B1BCC0A33001652FC /* CoreData */,
 				03D1870D1BCC0BE5001652FC /* CustomCellClass */,
 				03B7711C1BC14F2C009FBD7B /* AppDelegate.h */,
 				03B7711D1BC14F2C009FBD7B /* AppDelegate.m */,
-				03B771221BC14F2C009FBD7B /* ViewController.h */,
-				03B771231BC14F2C009FBD7B /* ViewController.m */,
 				03D867FD1BC5156F006D7C62 /* Main.storyboard */,
 				03B771281BC14F2C009FBD7B /* Images.xcassets */,
 				03B7712A1BC14F2C009FBD7B /* LaunchScreen.xib */,
@@ -415,7 +418,6 @@
 				03601CE41BC2B173005FD919 /* SearchViewController.m in Sources */,
 				03601CE11BC2B146005FD919 /* BookMarksViewController.m in Sources */,
 				037AA84E1BD800EE000480CD /* Comment.m in Sources */,
-				03B771241BC14F2C009FBD7B /* ViewController.m in Sources */,
 				03B7711B1BC14F2C009FBD7B /* main.m in Sources */,
 				03D187221BCFEC05001652FC /* Advert.m in Sources */,
 				03601CDE1BC2B123005FD919 /* DetailViewController.m in Sources */,

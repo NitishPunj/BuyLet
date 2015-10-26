@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
+            timestampString = "467568043.147781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "-searchProperties:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
+            timestampString = "467568043.147781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "-jsonFetch"
             landmarkType = "5">
             <Locations>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
+            timestampString = "467568043.147781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "-jsonFetch"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
+            timestampString = "467568043.147781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "-jsonFetch"
             landmarkType = "5">
          </BreakpointContent>
@@ -106,107 +106,107 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
-            landmarkName = "-addToRetrivedResults:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
-            landmarkName = "-addToRetrivedResults:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
-            landmarkName = "-addToRetrivedResults:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
-            landmarkName = "-addToRetrivedResults:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "-addToRetrivedResults:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "186"
-            endingLineNumber = "186"
-            landmarkName = "-addToRetrivedResults:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
+            timestampString = "467568043.147781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "184"
             endingLineNumber = "184"
+            landmarkName = "-addToRetrivedResults:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/SearchViewController.m"
+            timestampString = "467568043.147781"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "-addToRetrivedResults:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/SearchViewController.m"
+            timestampString = "467568043.147781"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "-addToRetrivedResults:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/SearchViewController.m"
+            timestampString = "467568043.147781"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
+            landmarkName = "-addToRetrivedResults:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/SearchViewController.m"
+            timestampString = "467568043.147781"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "-addToRetrivedResults:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/SearchViewController.m"
+            timestampString = "467568043.147781"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "-addToRetrivedResults:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/SearchViewController.m"
+            timestampString = "467568043.147781"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "-addToRetrivedResults:"
             landmarkType = "5">
          </BreakpointContent>
@@ -394,11 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
+            timestampString = "467568043.147781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
             landmarkName = "-addToRetrivedResults:"
             landmarkType = "5">
          </BreakpointContent>
@@ -410,11 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
+            timestampString = "467568043.147781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "-addToRetrivedResults:"
             landmarkType = "5">
          </BreakpointContent>
@@ -426,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
+            timestampString = "467568043.147781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "-addToRetrivedResults:"
             landmarkType = "5">
          </BreakpointContent>
@@ -474,11 +474,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
+            timestampString = "467574898.573027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "-showText"
             landmarkType = "5">
          </BreakpointContent>
@@ -506,11 +506,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "466965780.52708"
+            timestampString = "467574898.573027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "-downloadAndDisplayImage"
             landmarkType = "5">
          </BreakpointContent>
@@ -522,11 +522,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "466965780.52708"
+            timestampString = "467574898.573027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "-downloadAndDisplayImage"
             landmarkType = "5">
          </BreakpointContent>
@@ -602,23 +602,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
-            landmarkName = "-addToBookmarks"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
+            timestampString = "467574898.573027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "175"
@@ -634,11 +618,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
+            timestampString = "467574898.573027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "-addToBookmarks"
             landmarkType = "5">
          </BreakpointContent>
@@ -650,167 +634,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
-            landmarkName = "-addToBookmarks"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
-            landmarkName = "-addToBookmarks"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
-            landmarkName = "-addToBookmarks"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
-            landmarkName = "-addToBookmarks"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
-            landmarkName = "-addToBookmarks"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "186"
-            endingLineNumber = "186"
-            landmarkName = "-addToBookmarks"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
-            landmarkName = "-addToBookmarks"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
-            landmarkName = "-addToBookmarks"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
-            landmarkName = "-addToBookmarks"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
-            landmarkName = "-addToBookmarks"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
+            timestampString = "467574898.573027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "178"
@@ -826,11 +650,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
+            timestampString = "467574898.573027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "-addToBookmarks"
             landmarkType = "5">
          </BreakpointContent>
@@ -842,7 +666,135 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
+            timestampString = "467574898.573027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "-addToBookmarks"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "467574898.573027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "-addToBookmarks"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "467574898.573027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "-addToBookmarks"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "467574898.573027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "-addToBookmarks"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "467574898.573027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "-addToBookmarks"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "467574898.573027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
+            landmarkName = "-addToBookmarks"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "467574898.573027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
+            landmarkName = "-addToBookmarks"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "467574898.573027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "-addToBookmarks"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "467574898.573027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "193"
@@ -858,7 +810,71 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
+            timestampString = "467574898.573027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "-addToBookmarks"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "467574898.573027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "-addToBookmarks"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "467574898.573027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
+            landmarkName = "-addToBookmarks"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "467574898.573027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "-addToBookmarks"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "467574898.573027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "185"
@@ -874,11 +890,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
+            timestampString = "467574898.573027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "-addToBookmarks"
             landmarkType = "5">
          </BreakpointContent>
@@ -890,11 +906,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
+            timestampString = "467574898.573027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "-addToBookmarks"
             landmarkType = "5">
          </BreakpointContent>
@@ -906,27 +922,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
+            timestampString = "467574898.573027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
-            landmarkName = "-addToBookmarks"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "-addToBookmarks"
             landmarkType = "5">
          </BreakpointContent>
@@ -938,23 +938,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
-            landmarkName = "-addToRetrivedResults:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
+            timestampString = "467568043.147781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "171"
@@ -970,11 +954,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467045884.273471"
+            timestampString = "467568043.147781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "-addToRetrivedResults:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/SearchViewController.m"
+            timestampString = "467568043.147781"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "-addToRetrivedResults:"
             landmarkType = "5">
          </BreakpointContent>
@@ -986,7 +986,39 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
+            timestampString = "467574898.573027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "-addToBookmarks"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "467574898.573027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "-addToBookmarks"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "467574898.573027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "198"
@@ -1002,43 +1034,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
+            timestampString = "467574898.573027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
-            landmarkName = "-addToBookmarks"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467026446.170279"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
-            landmarkName = "-addToBookmarks"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "466965780.52708"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "-downloadAndDisplayImage"
             landmarkType = "5">
          </BreakpointContent>
@@ -1050,11 +1050,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "466963841.621441"
+            timestampString = "467550266.055025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1066,11 +1066,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467226519.280314"
+            timestampString = "467550266.055025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "216"
-            endingLineNumber = "216"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
             landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1082,7 +1082,39 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467226519.280314"
+            timestampString = "467550266.055025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
+            landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/BookMarksViewController.m"
+            timestampString = "467550266.055025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/BookMarksViewController.m"
+            timestampString = "467550266.055025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "223"
@@ -1098,7 +1130,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467226519.280314"
+            timestampString = "467550266.055025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "231"
@@ -1114,11 +1146,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467226519.280314"
+            timestampString = "467550266.055025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "233"
-            endingLineNumber = "233"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
             landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1130,27 +1162,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467226519.280314"
+            timestampString = "467550266.055025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "241"
-            endingLineNumber = "241"
-            landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467226519.280314"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "241"
-            endingLineNumber = "241"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
             landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1162,103 +1178,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467226519.280314"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "226"
-            endingLineNumber = "226"
-            landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467226519.280314"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "227"
-            endingLineNumber = "227"
-            landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467226519.280314"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
-            landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467284709.025674"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "254"
-            endingLineNumber = "254"
-            landmarkName = "-tableView:canEditRowAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467284709.025674"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "257"
-            endingLineNumber = "257"
-            landmarkName = "-tableView:canEditRowAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467284709.025674"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "255"
-            endingLineNumber = "255"
-            landmarkName = "-tableView:canEditRowAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467226519.280314"
+            timestampString = "467550266.055025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "217"
@@ -1274,11 +1194,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467226519.280314"
+            timestampString = "467550266.055025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "214"
-            endingLineNumber = "214"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
             landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1290,11 +1210,91 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467226519.280314"
+            timestampString = "467550266.055025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
+            landmarkName = "-tableView:canEditRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/BookMarksViewController.m"
+            timestampString = "467550266.055025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
+            landmarkName = "-tableView:canEditRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/BookMarksViewController.m"
+            timestampString = "467550266.055025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
+            landmarkName = "-tableView:canEditRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/BookMarksViewController.m"
+            timestampString = "467550266.055025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/BookMarksViewController.m"
+            timestampString = "467550266.055025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/BookMarksViewController.m"
+            timestampString = "467550266.055025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1562,11 +1562,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "237"
-            endingLineNumber = "237"
+            startingLineNumber = "250"
+            endingLineNumber = "250"
             landmarkName = "-LoadJson"
             landmarkType = "5">
          </BreakpointContent>
@@ -1578,11 +1578,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467050264.790822"
+            timestampString = "467568043.147781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "-jsonFetch"
             landmarkType = "5">
          </BreakpointContent>
@@ -1594,11 +1594,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/SearchViewController.m"
-            timestampString = "467050266.898534"
+            timestampString = "467568043.147781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "-jsonFetch"
             landmarkType = "5">
          </BreakpointContent>
@@ -1620,55 +1620,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "313"
-            endingLineNumber = "313"
-            landmarkName = "-refineCommentsForTableView:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "319"
-            endingLineNumber = "319"
-            landmarkName = "-refineCommentsForTableView:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "309"
-            endingLineNumber = "309"
-            landmarkName = "-refineCommentsForTableView:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "326"
@@ -1684,11 +1636,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "327"
-            endingLineNumber = "327"
+            startingLineNumber = "332"
+            endingLineNumber = "332"
             landmarkName = "-refineCommentsForTableView:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1700,59 +1652,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "352"
-            endingLineNumber = "352"
-            landmarkName = "-addToCommentArray:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "366"
-            endingLineNumber = "366"
-            landmarkName = "-addToCommentArray:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "367"
-            endingLineNumber = "367"
-            landmarkName = "-addToCommentArray:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "321"
-            endingLineNumber = "321"
+            startingLineNumber = "322"
+            endingLineNumber = "322"
             landmarkName = "-refineCommentsForTableView:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1764,11 +1668,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "304"
-            endingLineNumber = "304"
+            startingLineNumber = "339"
+            endingLineNumber = "339"
             landmarkName = "-refineCommentsForTableView:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1780,11 +1684,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "360"
-            endingLineNumber = "360"
+            startingLineNumber = "340"
+            endingLineNumber = "340"
+            landmarkName = "-refineCommentsForTableView:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "365"
+            endingLineNumber = "365"
             landmarkName = "-addToCommentArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1796,11 +1716,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "360"
-            endingLineNumber = "360"
+            startingLineNumber = "379"
+            endingLineNumber = "379"
             landmarkName = "-addToCommentArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1812,11 +1732,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "355"
-            endingLineNumber = "355"
+            startingLineNumber = "380"
+            endingLineNumber = "380"
             landmarkName = "-addToCommentArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1828,11 +1748,91 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "357"
-            endingLineNumber = "357"
+            startingLineNumber = "334"
+            endingLineNumber = "334"
+            landmarkName = "-refineCommentsForTableView:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "317"
+            endingLineNumber = "317"
+            landmarkName = "-refineCommentsForTableView:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "373"
+            endingLineNumber = "373"
+            landmarkName = "-addToCommentArray:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "373"
+            endingLineNumber = "373"
+            landmarkName = "-addToCommentArray:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "368"
+            endingLineNumber = "368"
+            landmarkName = "-addToCommentArray:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "370"
+            endingLineNumber = "370"
             landmarkName = "-addToCommentArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1854,11 +1854,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "353"
-            endingLineNumber = "353"
+            startingLineNumber = "366"
+            endingLineNumber = "366"
             landmarkName = "-addToCommentArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1870,11 +1870,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "322"
-            endingLineNumber = "322"
+            startingLineNumber = "335"
+            endingLineNumber = "335"
             landmarkName = "-refineCommentsForTableView:"
             landmarkType = "5">
             <Locations>
@@ -1918,11 +1918,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "346"
-            endingLineNumber = "346"
+            startingLineNumber = "359"
+            endingLineNumber = "359"
             landmarkName = "-addToCommentArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1934,7 +1934,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "156"
@@ -1950,7 +1950,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "159"
@@ -1966,7 +1966,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "157"
@@ -1982,7 +1982,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "162"
@@ -1998,7 +1998,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "150"
@@ -2030,7 +2030,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "141"
@@ -2046,7 +2046,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "131"
@@ -2062,7 +2062,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "139"
@@ -2078,7 +2078,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "140"
@@ -2094,11 +2094,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "368"
-            endingLineNumber = "368"
+            startingLineNumber = "381"
+            endingLineNumber = "381"
             landmarkName = "-addToCommentArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2110,7 +2110,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "149"
@@ -2126,7 +2126,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "152"
@@ -2142,7 +2142,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "151"
@@ -2158,11 +2158,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "617"
-            endingLineNumber = "617"
+            startingLineNumber = "630"
+            endingLineNumber = "630"
             landmarkName = "@implementation CommentsViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -2226,11 +2226,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "316"
-            endingLineNumber = "316"
+            startingLineNumber = "329"
+            endingLineNumber = "329"
             landmarkName = "-refineCommentsForTableView:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2332,11 +2332,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "545"
-            endingLineNumber = "545"
+            startingLineNumber = "562"
+            endingLineNumber = "562"
             landmarkName = "-post:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2348,11 +2348,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "497"
-            endingLineNumber = "497"
+            startingLineNumber = "514"
+            endingLineNumber = "514"
             landmarkName = "-deleteComment::"
             landmarkType = "5">
          </BreakpointContent>
@@ -2364,11 +2364,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "488"
-            endingLineNumber = "488"
+            startingLineNumber = "505"
+            endingLineNumber = "505"
             landmarkName = "-deleteComment::"
             landmarkType = "5">
          </BreakpointContent>
@@ -2380,11 +2380,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "489"
-            endingLineNumber = "489"
+            startingLineNumber = "506"
+            endingLineNumber = "506"
             landmarkName = "-deleteComment::"
             landmarkType = "5">
          </BreakpointContent>
@@ -2396,7 +2396,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "177"
@@ -2422,11 +2422,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "361"
-            endingLineNumber = "361"
+            startingLineNumber = "374"
+            endingLineNumber = "374"
             landmarkName = "-addToCommentArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2438,11 +2438,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "363"
-            endingLineNumber = "363"
+            startingLineNumber = "376"
+            endingLineNumber = "376"
             landmarkName = "-addToCommentArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2454,11 +2454,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "491"
-            endingLineNumber = "491"
+            startingLineNumber = "508"
+            endingLineNumber = "508"
             landmarkName = "-deleteComment::"
             landmarkType = "5">
          </BreakpointContent>
@@ -2470,11 +2470,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "364"
-            endingLineNumber = "364"
+            startingLineNumber = "377"
+            endingLineNumber = "377"
             landmarkName = "-addToCommentArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2486,11 +2486,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "423"
-            endingLineNumber = "423"
+            startingLineNumber = "438"
+            endingLineNumber = "438"
             landmarkName = "-putWebServiceForEditComment::"
             landmarkType = "5">
          </BreakpointContent>
@@ -2502,11 +2502,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "454"
-            endingLineNumber = "454"
+            startingLineNumber = "471"
+            endingLineNumber = "471"
             landmarkName = "-updateCommentArrayAtIndex::"
             landmarkType = "5">
          </BreakpointContent>
@@ -2518,11 +2518,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "472"
-            endingLineNumber = "472"
+            startingLineNumber = "489"
+            endingLineNumber = "489"
             landmarkName = "-updateCommentArrayAtIndex::"
             landmarkType = "5">
          </BreakpointContent>
@@ -2534,11 +2534,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "474"
-            endingLineNumber = "474"
+            startingLineNumber = "491"
+            endingLineNumber = "491"
             landmarkName = "-updateCommentArrayAtIndex::"
             landmarkType = "5">
          </BreakpointContent>
@@ -2550,11 +2550,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "476"
-            endingLineNumber = "476"
+            startingLineNumber = "493"
+            endingLineNumber = "493"
             landmarkName = "-updateCommentArrayAtIndex::"
             landmarkType = "5">
          </BreakpointContent>
@@ -2678,11 +2678,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
             landmarkName = "-tableView:editActionsForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2694,7 +2694,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "200"
@@ -2710,11 +2710,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
             landmarkName = "-tableView:editActionsForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2726,11 +2726,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "418"
-            endingLineNumber = "418"
+            startingLineNumber = "433"
+            endingLineNumber = "433"
             landmarkName = "-putWebServiceForEditComment::"
             landmarkType = "5">
          </BreakpointContent>
@@ -2742,11 +2742,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "377"
-            endingLineNumber = "377"
+            startingLineNumber = "390"
+            endingLineNumber = "390"
             landmarkName = "-updateButton:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2758,11 +2758,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "385"
-            endingLineNumber = "385"
+            startingLineNumber = "398"
+            endingLineNumber = "398"
             landmarkName = "-putWebServiceForEditComment::"
             landmarkType = "5">
          </BreakpointContent>
@@ -2774,11 +2774,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
             landmarkName = "-tableView:editActionsForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2790,11 +2790,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
             landmarkName = "-tableView:editActionsForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2806,11 +2806,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
             landmarkName = "-tableView:editActionsForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2822,11 +2822,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "456"
-            endingLineNumber = "456"
+            startingLineNumber = "473"
+            endingLineNumber = "473"
             landmarkName = "-updateCommentArrayAtIndex::"
             landmarkType = "5">
          </BreakpointContent>
@@ -2838,11 +2838,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "459"
-            endingLineNumber = "459"
+            startingLineNumber = "476"
+            endingLineNumber = "476"
             landmarkName = "-updateCommentArrayAtIndex::"
             landmarkType = "5">
          </BreakpointContent>
@@ -2854,11 +2854,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "467"
-            endingLineNumber = "467"
+            startingLineNumber = "484"
+            endingLineNumber = "484"
             landmarkName = "-updateCommentArrayAtIndex::"
             landmarkType = "5">
          </BreakpointContent>
@@ -3014,11 +3014,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "240"
-            endingLineNumber = "240"
+            startingLineNumber = "253"
+            endingLineNumber = "253"
             landmarkName = "-LoadJson"
             landmarkType = "5">
          </BreakpointContent>
@@ -3030,11 +3030,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "467389549.962065"
+            timestampString = "467574898.573027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "-handleLongPress:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3046,11 +3046,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/BookMarksViewController.m"
-            timestampString = "467389646.171601"
+            timestampString = "467550266.055025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "215"
-            endingLineNumber = "215"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
             landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3078,11 +3078,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "610"
-            endingLineNumber = "610"
+            startingLineNumber = "623"
+            endingLineNumber = "623"
             landmarkName = "-cancelEditButton:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3094,11 +3094,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "609"
-            endingLineNumber = "609"
+            startingLineNumber = "622"
+            endingLineNumber = "622"
             landmarkName = "-cancelEditButton:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3110,11 +3110,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "609"
-            endingLineNumber = "609"
+            startingLineNumber = "622"
+            endingLineNumber = "622"
             landmarkName = "-cancelEditButton:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3126,11 +3126,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/CommentsViewController.m"
-            timestampString = "467418323.436087"
+            timestampString = "467563647.93611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "611"
-            endingLineNumber = "611"
+            startingLineNumber = "624"
+            endingLineNumber = "624"
             landmarkName = "-cancelEditButton:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3244,6 +3244,166 @@
             startingLineNumber = "29"
             endingLineNumber = "29"
             landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "604"
+            endingLineNumber = "604"
+            landmarkName = "-addNewCommentToTableView:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "609"
+            endingLineNumber = "609"
+            landmarkName = "-addNewCommentToTableView:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
+            landmarkName = "-tableView:editActionsForRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
+            landmarkName = "-tableView:editActionsForRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "426"
+            endingLineNumber = "426"
+            landmarkName = "-putWebServiceForEditComment::"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "437"
+            endingLineNumber = "437"
+            landmarkName = "-putWebServiceForEditComment::"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "430"
+            endingLineNumber = "430"
+            landmarkName = "-putWebServiceForEditComment::"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "-tableView:editActionsForRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
+            landmarkName = "-tableView:editActionsForRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/CommentsViewController.m"
+            timestampString = "467563647.93611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
+            landmarkName = "-tableView:editActionsForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

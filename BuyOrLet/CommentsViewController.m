@@ -50,7 +50,7 @@
 
 
 
-//The below code I ADDED TO ENABLE OR DISABLE EDITITNG but then I thought, I DONT NEED IT, So it is JUST HERE TO BE USED IN THE FUTURE
+//The below code I ADDED TO ENABLE OR DISABLE EDITITNG but then I thought, I do not need it at the moment, So it is JUST HERE TO BE USED IN THE FUTURE
 //- (void)setEditing:(BOOL)editing animated:(BOOL)animated
 //{
 //    // Make sure you call super first
@@ -80,7 +80,7 @@
                                      animated:YES];
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     
-    refreshControl.backgroundColor = [UIColor purpleColor];
+    refreshControl.backgroundColor = [UIColor grayColor];
     refreshControl.tintColor = [UIColor whiteColor];
     [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
     [self.commentsTable addSubview:refreshControl];
@@ -180,7 +180,6 @@ if(refreshControl){
 - (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewRowAction *deleteAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Delete" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
-        // show UIActionSheet
         
         Comment *comObject = [commentsArray objectAtIndex:indexPath.row];
         NSNumber *temp = comObject.userID;
@@ -197,7 +196,22 @@ if(refreshControl){
         //this will be passed on to the edit button function
         Comment *comObject = [commentsArray objectAtIndex:indexPath.row];
        // NSNumber *temp = comObject.userID;
-        [self.view setOpaque:NO];
+        [self.baseView setHidden:YES];
+        
+//        
+//        if (!UIAccessibilityIsReduceTransparencyEnabled()) {
+//            self.editCommentView.backgroundColor = [UIColor clearColor];
+//            
+//            UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+//            UIVisualEffectView *blurEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+//            blurEffectView.frame = self.view.bounds;
+//            blurEffectView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//            
+//            [self.editCommentView addSubview:blurEffectView];
+//        }  
+//        else {
+//            self.editCommentView.backgroundColor = [UIColor blackColor];
+//        }
         self.editTextbox.text = comObject.commentText;
        
         
@@ -206,10 +220,9 @@ if(refreshControl){
         
         [self.editCommentView setHidden:NO];
 
-        
-        
+
     }];
-    editAction.backgroundColor = [UIColor blueColor];
+    editAction.backgroundColor = [UIColor orangeColor];
     
     return @[deleteAction, editAction];
 }
@@ -415,6 +428,8 @@ NSString* urlGetAll = [NSString stringWithFormat:@"%@/items.json",URL];
         [self updateCommentArrayAtIndex:responseObject :indexPath];
         
          [self.editCommentView setHidden:YES];
+        [self.baseView setHidden:NO];
+        
        // [_commentsTable reloadData];
         
         
@@ -433,6 +448,8 @@ NSString* urlGetAll = [NSString stringWithFormat:@"%@/items.json",URL];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
          [self.editCommentView setHidden:YES];
+        [self.baseView setHidden:NO];
+        
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         [self.commentsTable beginUpdates];
         [self.commentsTable reloadRowsAtIndexPaths:@[indexForUpdate] withRowAnimation:UITableViewRowAnimationLeft];
@@ -584,20 +601,14 @@ NSString* urlGetAll = [NSString stringWithFormat:@"%@/items.json",URL];
     
     
     [MBProgressHUD hideHUDForView:self.view animated:YES];
-    [self.commentsTable reloadData];
+   [self.commentsTable reloadData];
     
-    //NSInteger rowCount = [commentsArray count];
+    //scrolling to tthe bottom of the table where the new comment gets added
     
-
-   // NSIndexPath * indexForPost = [NSIndexPath indexPathForRow:rowCount inSection:0];
+    CGFloat height = self.commentsTable.contentSize.height - self.commentsTable.bounds.size.height;
+    [self.commentsTable setContentOffset:CGPointMake(0, height) animated:YES];
     
-  //  [self.commentsTable beginUpdates];
     
- // [self.commentsTable reloadRowsAtIndexPaths:@[indexForPost] withRowAnimation:UITableViewRowAnimationAutomatic];
-    
-  //[self.commentsTable endUpdates];
-
-
 
 }
  
@@ -606,6 +617,8 @@ NSString* urlGetAll = [NSString stringWithFormat:@"%@/items.json",URL];
 
 - (IBAction)cancelEditButton:(id)sender {
     [self.editCommentView setHidden:YES];
+    [self.baseView setHidden:NO];
+    
     [self.commentsTable beginUpdates];
     [self.commentsTable reloadRowsAtIndexPaths:@[indexForUpdate] withRowAnimation:UITableViewRowAnimationAutomatic];
     [self.commentsTable endUpdates];

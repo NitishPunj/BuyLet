@@ -10,6 +10,7 @@
 #import "AFNetworking.h"
 #import "UIImageView+AFNetworking.h"
 
+
 #define mainQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 @interface DetailViewController ()
 
@@ -201,5 +202,14 @@ else
         
     }
 
+}
+- (IBAction)addContact:(id)sender {
+    
+    
+    
+    
+    
+    
+    
 }
 @end

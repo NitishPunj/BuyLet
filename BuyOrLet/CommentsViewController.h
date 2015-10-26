@@ -22,6 +22,7 @@
 - (IBAction)updateButton:(id)sender;
 - (IBAction)cancelEditButton:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UIView *baseView;
 
 @property(strong,nonatomic)   NSString *listingCategoryString;
 

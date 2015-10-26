@@ -1,9 +1,11 @@
 //
 //  SearchViewController.m
+//  This class is performing the query request(Zoopla API) using the parameters added by the users and fetches the results and passes them to the Results view Controller
 //  BuyOrLet
 //
 //  Created by TAE on 05/10/2015.
 //  Copyright (c) 2015 TAE. All rights reserved.
+//
 //
 
 #import "SearchViewController.h"
@@ -54,7 +56,9 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
 //NSString *string = [NSString stringWithFormat:@"%@", BaseURLString];
 //NSURL *url = [NSURL URLWithString:string];
 //NSURLRequest *request = [NSURLRequest requestWithURL:url];
-  
+ 
+    
+    //AFNetworking GET request
     
 AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSMutableString *appendString = [NSMutableString stringWithFormat:@"%@area=%@&api_key=s5g5evsggh64guj2u8jq5cje&radius=1&listing_status=rent&maximum_price=2000&minimum_beds=1&maximum_beds=2",BaseURLString,_area.text];

@@ -53,12 +53,6 @@
 
 }
 
-
-
-
-
-
-
 - (NSManagedObjectContext *)managedObjectContext {
     NSManagedObjectContext *context = nil;
     id delegate = [[UIApplication sharedApplication] delegate];
@@ -165,16 +159,12 @@
 //                //this will set the image when loading is finished
 //                dispatch_async(dispatch_get_main_queue(), ^{
 //                    cell.thumbnailImage.image = [UIImage imageWithData:image];
-//                    //reload will display the images
-//                    [self.bookmarksTable reloadData];
-//                });
-//                
+//
 //            }
 //            else {
 //              
 //                    cell.thumbnailImage.image= [UIImage imageNamed:@"house.jpeg"];
-//                    //reload will display the images
-//                    [self.bookmarksTable reloadData];
+//
 //                    
 //              
 //            }
