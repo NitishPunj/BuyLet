@@ -52,8 +52,8 @@
     
    NSString * stringNumber = pL.agentNumber;
     NSString * agentName = pL.agentName;
-
-   // [self showSMS:stringNumber:agentName];
+//Comment one of them out
+   [self showSMS:stringNumber:agentName];
     [self showEmail:agentName :stringNumber];
 
 
@@ -85,8 +85,9 @@
 - (void)showEmail:(NSString*)file :(NSString*)agentNumber {
     
     NSString *emailTitle = @"Property Enquiry";
-    NSString *messageBody = @"Hello !";
-    NSArray *toRecipents = [NSArray arrayWithObject:@"punj.nitish@gmail.com"];
+    NSString *messageBody = [NSString stringWithFormat:@"Hello %@",file];
+    
+    NSArray *toRecipents = [NSArray arrayWithObject:@"dd@zoopla.com"];
     
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     mc.mailComposeDelegate = self;
@@ -94,35 +95,7 @@
     [mc setMessageBody:messageBody isHTML:NO];
     [mc setToRecipients:toRecipents];
     
-    // Determine the file name and extension if need to add an attachement
-    //NSArray *filepart = [file componentsSeparatedByString:@"."];
-  //  NSString *filename = [filepart objectAtIndex:0];
-   // NSString *extension = [filepart objectAtIndex:0];
-    
-    // Get the resource path and read the file using NSData
-  //  NSString *filePath = [[NSBundle mainBundle] pathForResource:filename ofType:extension];
-   // NSData *fileData = [NSData dataWithContentsOfFile:filePath];
-    
-//    // Determine the MIME type
-//    NSString *mimeType;
-//    if ([extension isEqualToString:@"jpg"]) {
-//        mimeType = @"image/jpeg";
-//    } else if ([extension isEqualToString:@"png"]) {
-//        mimeType = @"image/png";
-//    } else if ([extension isEqualToString:@"doc"]) {
-//        mimeType = @"application/msword";
-//    } else if ([extension isEqualToString:@"ppt"]) {
-//        mimeType = @"application/vnd.ms-powerpoint";
-//    } else if ([extension isEqualToString:@"html"]) {
-//        mimeType = @"text/html";
-//    } else if ([extension isEqualToString:@"pdf"]) {
-//        mimeType = @"application/pdf";
-//    }
-//    
-//    // Add attachment
-//    [mc addAttachmentData:fileData mimeType:mimeType fileName:filename];
-//    
-    // Present mail view controller on screen
+       // Present mail view controller on screen
     [self presentViewController:mc animated:YES completion:NULL];
     
 }

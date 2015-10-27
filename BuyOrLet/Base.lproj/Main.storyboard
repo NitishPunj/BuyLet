@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -305,7 +305,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Street" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZmJ-nr-cns">
-                                        <rect key="frame" x="203" y="101" width="133" height="30"/>
+                                        <rect key="frame" x="203" y="179" width="133" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="I8r-yh-CCA"/>
                                             <constraint firstAttribute="width" constant="133" id="e6N-HX-pfT"/>
@@ -313,17 +313,17 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="town" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9nK-bA-gMk">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Radius" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9nK-bA-gMk">
                                         <rect key="frame" x="203" y="141" width="133" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="133" id="3xM-rq-oCV"/>
                                             <constraint firstAttribute="height" constant="30" id="ZWp-mg-Ifb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="postcode" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gCo-GX-74U">
-                                        <rect key="frame" x="203" y="181" width="133" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Postcode" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gCo-GX-74U">
+                                        <rect key="frame" x="203" y="103" width="133" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="4X9-La-oOX"/>
                                             <constraint firstAttribute="width" constant="133" id="pMt-x8-l6X"/>
@@ -331,30 +331,30 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="country" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V17-GN-NFA">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Max Rent" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V17-GN-NFA">
                                         <rect key="frame" x="203" y="261" width="133" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="1JQ-yP-66x"/>
                                             <constraint firstAttribute="width" constant="133" id="eh7-GZ-jur"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="county" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ijN-7k-SXp">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No of Bedrooms" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ijN-7k-SXp">
                                         <rect key="frame" x="203" y="223" width="133" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="K8x-vS-Spp"/>
                                             <constraint firstAttribute="width" constant="133" id="gX2-YE-Sbq"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cCI-k3-hRs">
                                         <rect key="frame" x="203" y="8" width="37" height="37"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </activityIndicatorView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGu-XW-AJc">
-                                        <rect key="frame" x="121" y="368" width="30" height="30"/>
+                                        <rect key="frame" x="171" y="344" width="30" height="30"/>
                                         <state key="normal" title="Find">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -365,23 +365,23 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="gCo-GX-74U" firstAttribute="top" secondItem="9nK-bA-gMk" secondAttribute="bottom" constant="10" id="AQ6-Xh-TtD"/>
+                                    <constraint firstItem="gCo-GX-74U" firstAttribute="top" secondItem="9nK-bA-gMk" secondAttribute="bottom" constant="-68" id="AQ6-Xh-TtD"/>
                                     <constraint firstItem="cCI-k3-hRs" firstAttribute="top" secondItem="OPG-1Q-0pF" secondAttribute="top" constant="8" id="HCH-Wc-23S"/>
                                     <constraint firstItem="ijN-7k-SXp" firstAttribute="leading" secondItem="OPG-1Q-0pF" secondAttribute="leading" constant="203" id="Iia-Mx-9dZ"/>
                                     <constraint firstItem="dH7-q5-nIF" firstAttribute="leading" secondItem="OPG-1Q-0pF" secondAttribute="leading" constant="203" id="KIL-yM-dbe"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eGu-XW-AJc" secondAttribute="bottom" constant="5" id="MSA-la-Kq2"/>
-                                    <constraint firstItem="ZmJ-nr-cns" firstAttribute="top" secondItem="dH7-q5-nIF" secondAttribute="bottom" constant="10" id="Mfd-WK-PdB"/>
+                                    <constraint firstItem="ZmJ-nr-cns" firstAttribute="top" secondItem="dH7-q5-nIF" secondAttribute="bottom" constant="88" id="Mfd-WK-PdB"/>
                                     <constraint firstItem="9nK-bA-gMk" firstAttribute="leading" secondItem="OPG-1Q-0pF" secondAttribute="leading" constant="203" id="P10-QO-Ywj"/>
                                     <constraint firstItem="gCo-GX-74U" firstAttribute="leading" secondItem="OPG-1Q-0pF" secondAttribute="leading" constant="203" id="QO5-6W-eo9"/>
                                     <constraint firstItem="cCI-k3-hRs" firstAttribute="leading" secondItem="OPG-1Q-0pF" secondAttribute="leading" constant="203" id="UmO-bQ-ESc"/>
                                     <constraint firstItem="V17-GN-NFA" firstAttribute="leading" secondItem="OPG-1Q-0pF" secondAttribute="leading" constant="203" id="ZZt-ib-fYU"/>
                                     <constraint firstItem="dH7-q5-nIF" firstAttribute="top" secondItem="cCI-k3-hRs" secondAttribute="bottom" constant="16" id="aRg-ip-1PD"/>
                                     <constraint firstItem="V17-GN-NFA" firstAttribute="top" secondItem="ijN-7k-SXp" secondAttribute="bottom" constant="8" id="foN-ZO-pj8"/>
-                                    <constraint firstItem="ijN-7k-SXp" firstAttribute="top" secondItem="gCo-GX-74U" secondAttribute="bottom" constant="12" id="i6B-MB-k2I"/>
+                                    <constraint firstItem="ijN-7k-SXp" firstAttribute="top" secondItem="gCo-GX-74U" secondAttribute="bottom" constant="90" id="i6B-MB-k2I"/>
                                     <constraint firstItem="ZmJ-nr-cns" firstAttribute="leading" secondItem="OPG-1Q-0pF" secondAttribute="leading" constant="203" id="qhP-L1-HRR"/>
-                                    <constraint firstItem="eGu-XW-AJc" firstAttribute="leading" secondItem="OPG-1Q-0pF" secondAttribute="leading" constant="121" id="rt2-f0-MWw"/>
-                                    <constraint firstAttribute="bottom" secondItem="eGu-XW-AJc" secondAttribute="bottom" constant="5" id="swW-tr-Xl0"/>
-                                    <constraint firstItem="9nK-bA-gMk" firstAttribute="top" secondItem="ZmJ-nr-cns" secondAttribute="bottom" constant="10" id="vtu-m8-fda"/>
+                                    <constraint firstItem="eGu-XW-AJc" firstAttribute="leading" secondItem="OPG-1Q-0pF" secondAttribute="leading" constant="171" id="rt2-f0-MWw"/>
+                                    <constraint firstAttribute="bottom" secondItem="eGu-XW-AJc" secondAttribute="bottom" constant="29" id="swW-tr-Xl0"/>
+                                    <constraint firstItem="9nK-bA-gMk" firstAttribute="top" secondItem="ZmJ-nr-cns" secondAttribute="bottom" constant="-68" id="vtu-m8-fda"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -400,12 +400,12 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="area" destination="dH7-q5-nIF" id="g03-Hm-EH1"/>
-                        <outlet property="country" destination="V17-GN-NFA" id="8pu-n4-3Vn"/>
-                        <outlet property="county" destination="ijN-7k-SXp" id="ogq-jw-VeJ"/>
+                        <outlet property="beds" destination="ijN-7k-SXp" id="xGv-Uu-CnX"/>
                         <outlet property="postcode" destination="gCo-GX-74U" id="h6D-aT-eoU"/>
+                        <outlet property="radius" destination="9nK-bA-gMk" id="iWQ-kQ-x9F"/>
+                        <outlet property="rent" destination="V17-GN-NFA" id="IY2-Qu-hTI"/>
                         <outlet property="spinningWheel" destination="cCI-k3-hRs" id="Dwy-Ic-IzA"/>
                         <outlet property="street" destination="ZmJ-nr-cns" id="ZsT-u3-QJB"/>
-                        <outlet property="town" destination="9nK-bA-gMk" id="Tb2-Gn-m3G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7LH-Gx-UVY" userLabel="First Responder" sceneMemberID="firstResponder"/>

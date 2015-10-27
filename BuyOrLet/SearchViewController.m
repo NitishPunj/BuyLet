@@ -56,15 +56,81 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
 //NSString *string = [NSString stringWithFormat:@"%@", BaseURLString];
 //NSURL *url = [NSURL URLWithString:string];
 //NSURLRequest *request = [NSURLRequest requestWithURL:url];
- 
     
-    //AFNetworking GET request
+    //Unit Testing to catch all the exceptions with different parameters
     
-AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    NSMutableString *appendString = [NSMutableString stringWithFormat:@"%@area=%@&api_key=s5g5evsggh64guj2u8jq5cje&radius=1&listing_status=rent&maximum_price=2000&minimum_beds=1&maximum_beds=2",BaseURLString,_area.text];
+    
+    
+    NSString *postFirst, *postSecond
+     ,*areaFirst,* areaSecond;
+    
+    
+   NSString * areaString = _area.text;
+    NSString *newString = [areaString stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+     NSArray *areaArray = [_area.text componentsSeparatedByString:@" "];
+    
+        
+        if ([areaArray count] >= 2)
+            
+        {
+            areaFirst = [areaArray objectAtIndex:0];
+            
+            
+            areaSecond = [areaArray objectAtIndex:1];
+            
+        }
+        else{
+            
+            areaFirst = [_area.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+            areaSecond = @"";
+        }
+        
+        
+
+    
+    
+    
+    
+    
+    NSArray *postCode = [_postcode.text componentsSeparatedByString:@" "];
+    
+    
+    if ([postCode count] >= 2)
+        
+    {
+ postFirst = [postCode objectAtIndex:0];
+    
+    
+ postSecond = [postCode objectAtIndex:1];
+        
+    }
+    else{ postFirst = _postcode.text;
+     postSecond = @"";
+    }
+    
+   
+    
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    NSMutableString *appendString;
+    
+    if(![_area.text isEqualToString:@""])
+        
+    {
+  
+   appendString = [NSMutableString stringWithFormat:@"%@postcode=%@+%@&area=%@+%@&api_key=s5g5evsggh64guj2u8jq5cje&radius=%@&listing_status=rent&maximum_price=%@&minimum_beds=1&maximum_beds=%@",BaseURLString,postFirst,postSecond,areaFirst,areaSecond,_radius.text,_rent.text,_beds.text];
+    }
+        
+    else
+        
+   appendString = [NSMutableString stringWithFormat:@"%@postcode=%@&area=%@&api_key=s5g5evsggh64guj2u8jq5cje&radius=%@&listing_status=rent&maximum_price=%@&minimum_beds=1&maximum_beds=%@",BaseURLString,postFirst,newString,_radius.text,_rent.text,_beds.text];
+        
     
     
     @try {
+        //AFNetworking GET request
         
         [manager GET:appendString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
             // NSLog(@"JSON: %@", responseObject);

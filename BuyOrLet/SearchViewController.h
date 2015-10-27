@@ -12,10 +12,10 @@
 @interface SearchViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITextField *area;
 @property (strong, nonatomic) IBOutlet UITextField *street;
-@property (strong, nonatomic) IBOutlet UITextField *town;
+@property (strong, nonatomic) IBOutlet UITextField *radius;
 @property (strong, nonatomic) IBOutlet UITextField *postcode;
-@property (strong, nonatomic) IBOutlet UITextField *county;
-@property (strong, nonatomic) IBOutlet UITextField *country;
+@property (strong, nonatomic) IBOutlet UITextField *beds;
+@property (strong, nonatomic) IBOutlet UITextField *rent;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *spinningWheel;
 
 

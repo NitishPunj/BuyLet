@@ -74,7 +74,7 @@
                 
                 UILabel *messageLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.tableResults.bounds.size.width, self.tableResults.bounds.size.height)];
                 
-                messageLabel.text = @"Ambiguition in Area field.  Please try using postcode";
+                messageLabel.text = @"Ambiguition in Area field.  Please try using postcode only";
                 messageLabel.textColor = [UIColor blackColor];
                 messageLabel.numberOfLines = 0;
                 messageLabel.textAlignment = NSTextAlignmentCenter;
