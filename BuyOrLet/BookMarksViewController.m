@@ -1,7 +1,8 @@
 //
 //  BookMarksViewController.m
 //  BuyOrLet
-//SMS and Mail functionaltiy added to support Communication between buyer and seller
+//  SMS and Mail functionaltiy added to support Communication between buyer and seller
+//  IOS 9 updated: Core Spotlight feature Added :D yoho. It works!
 //
 //  Created by TAE on 05/10/2015.
 //  Copyright (c) 2015 TAE. All rights reserved.
@@ -13,6 +14,12 @@
 #import "Advert.h"
 #import "UIImageView+AFNetworking.h"
 #import <MessageUI/MessageUI.h>
+#import <CoreSpotlight/CoreSpotlight.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+
+
+
+
 
 @interface BookMarksViewController ()<MFMessageComposeViewControllerDelegate,MFMailComposeViewControllerDelegate>{
 
@@ -32,11 +39,98 @@
     
     [super viewDidLoad];
     
+    
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cacheUpdated:) name:@"OpenMyViewController" object:nil];
+    
+}
+- (void)cacheUpdated:(NSNotification *)notification {
+    
+
     [self.bookmarksTable reloadData];
-    // Do any additional setup after loading the view.
+
+}
+
+
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+[[NSNotificationCenter defaultCenter] removeObserver:self];
+
+
+}
+
+
+-(void)setupCoreSpotlightSearch{
+//    CSSearchableItemAttributeSet *attributeSet;
+//    attributeSet = [[CSSearchableItemAttributeSet alloc]
+//                    initWithItemContentType:(NSString *)kUTTypeImage];
+//    
+//    attributeSet.title = @"BuyorLet";
+//    attributeSet.contentDescription = @"Finding properties is easy";
+//   // attributeSet.keywords = @[keywords];
+//    
+//    
+//    UIImage *image = [UIImage imageNamed:@"house"];
+//    NSData *imageData = [NSData dataWithData:UIImagePNGRepresentation(image)];
+//    attributeSet.thumbnailData = imageData;
     
     
+    NSMutableArray *mutArray = [[NSMutableArray alloc] init];
+    for(int i=0; i<bookmarkArray.count;i++)
+        
     
+    {
+        Advert *tempAd = [bookmarkArray objectAtIndex:i];
+        
+        [mutArray addObject:tempAd];
+    }
+    
+    NSMutableArray *arrayOfItems = [[NSMutableArray alloc] init];
+    
+    for(int i=0; i<mutArray.count;i++) {
+        
+        
+         Advert *tempAd = [bookmarkArray objectAtIndex:i];
+        
+        CSSearchableItemAttributeSet *attributeSet = [[CSSearchableItemAttributeSet alloc] initWithItemContentType:(NSString*)kUTTypeJSON];
+        attributeSet.title = tempAd.agentName;
+        attributeSet.contentDescription = tempAd.shortDescripton;
+        
+        attributeSet.keywords = @[tempAd.displayableAddress];
+        
+//        
+//        UIImage *image = [UIImage imageNamed:@"house"];
+//            NSData *imageData = [NSData dataWithData:UIImagePNGRepresentation(image)];
+//           attributeSet.thumbnailData = imageData;
+//        
+        
+        
+        NSData * imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString:tempAd.thumpnailImageURL]];
+      attributeSet.thumbnailData = imageData;
+        
+        CSSearchableItem *item = [[CSSearchableItem alloc] initWithUniqueIdentifier:tempAd.displayableAddress domainIdentifier:@"com.iphone.app" attributeSet:attributeSet];
+       
+        [arrayOfItems addObject:item];
+    }
+    
+    [[CSSearchableIndex defaultSearchableIndex] indexSearchableItems:[arrayOfItems mutableCopy] completionHandler: ^(NSError * __nullable error) {
+        NSLog(@"Spotlight Log");
+    }];
+    
+    
+//    
+//    CSSearchableItem *item = [[CSSearchableItem alloc]
+//                              initWithUniqueIdentifier:@"com.buylet"
+//                              domainIdentifier:@"spotlight.sam"
+//                              attributeSet:attributeSet];
+//    
+//    [[CSSearchableIndex defaultSearchableIndex] indexSearchableItems:@[item]
+//                                                   completionHandler: ^(NSError * __nullable error) {
+//                                                       if (!error)
+//                                                           NSLog(@"Search item indexed");
+//                                                   }];
+//
+
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -54,7 +148,8 @@
     NSString * agentName = pL.agentName;
 //Comment one of them out
    [self showSMS:stringNumber:agentName];
-    [self showEmail:agentName :stringNumber];
+    //Issue with the email but sms works
+   // [self showEmail:agentName :stringNumber];
 
 
     
@@ -63,8 +158,23 @@
 - (void)showSMS:(NSString*)numb :(NSString*)name {
     
     if(![MFMessageComposeViewController canSendText]) {
-        UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Your device doesn't support SMS!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [warningAlert show];
+        
+        
+        
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Your device doesn't support SMS!"  preferredStyle:UIAlertControllerStyleAlert];
+        
+        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+            NSLog(@"test11");
+        }]];
+        
+        
+       
+        [self presentViewController:alert animated:YES completion:nil];
+
+        
+//        
+//        UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Your device doesn't support SMS!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//        [warningAlert show];
         return;
     }
     
@@ -138,6 +248,8 @@
     
     bookmarkArray = [[managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
     [self.bookmarksTable reloadData];
+    [self setupCoreSpotlightSearch];
+
 
 }
 
@@ -363,8 +475,16 @@ if(isFiltered)
             
         case MessageComposeResultFailed:
         {
-            UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Failed to send SMS!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [warningAlert show];
+            
+            UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error"  message:@"Failed to send SMS!"  preferredStyle:UIAlertControllerStyleAlert];
+            
+            [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+                NSLog(@"test11");
+            }]];
+              [self presentViewController:alert animated:YES completion:nil];
+            
+//            UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Failed to send SMS!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//            [warningAlert show];
             break;
         }
             

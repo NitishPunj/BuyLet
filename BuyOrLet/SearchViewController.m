@@ -165,11 +165,22 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
                      
                      
                      if (statusErrorCode == 400){
-                         UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"No results founds" message:@"Invalid Parameters" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
                          
+                         UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"No results found" message:@"Invalid Parameters"  preferredStyle:UIAlertControllerStyleAlert];
+                         
+//                         UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"No results founds" message:@"Invalid Parameters" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+//                         
+//
+                         
+                         
+                         
+                         [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+                             NSLog(@"test");
+                             
+                         }]];
                          
                          resultsFound = NO;
-                         [alert show];
+                         [self presentViewController:alert animated:YES completion:nil];
                          
                          // [self.spinningWheel stopAnimating];
                          [MBProgressHUD hideHUDForView:self.view animated:YES];
@@ -177,14 +188,26 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
                      else{
                          
                          
-                         UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"No results founds" message:@"Offline - Try Again Later" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                         UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"No results found" message:@"Offline - Try Again Later"  preferredStyle:UIAlertControllerStyleAlert];
                          
+                         [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+                             NSLog(@"test");
+                         }]];
+                         
+                         //deprecated in ios 9
+//                         UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"No results founds" message:@"Offline - Try Again Later" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+//                         
                          
                          resultsFound = NO;
-                         [alert show];
+                         [self presentViewController:alert animated:YES completion:nil];
                          
+  
                          // [self.spinningWheel stopAnimating];
                          [MBProgressHUD hideHUDForView:self.view animated:YES];
+                         
+                         
+                       
+
                      }
                  }
                  
@@ -197,15 +220,21 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
         NSLog( @"NSException caught" );
         NSLog( @"Name: %@", exception.name);
         NSLog( @"Reason: %@", exception.reason );
+
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"No results found" message:exception.reason  preferredStyle:UIAlertControllerStyleAlert];
         
-        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"No results founds" message:exception.reason delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+            NSLog(@"test");
+        }]];
         
-        
+     
+         [MBProgressHUD hideHUDForView:self.view animated:YES];
+         [self presentViewController:alert animated:YES completion:nil];
         resultsFound = NO;
-        [alert show];
+       //  UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"No results founds" message:exception.reason delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
 
         // [self.spinningWheel stopAnimating];
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
+       
         return;
         
         

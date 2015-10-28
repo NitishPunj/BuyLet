@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <CoreSpotlight/CoreSpotlight.h>
+#import "BookMarksViewController.h"
 
 @interface AppDelegate ()
 
@@ -104,7 +107,7 @@
     if (!coordinator) {
         return nil;
     }
-    _managedObjectContext = [[NSManagedObjectContext alloc] init];
+    _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
     [_managedObjectContext setPersistentStoreCoordinator:coordinator];
     return _managedObjectContext;
 }
@@ -122,6 +125,41 @@
             abort();
         }
     }
+}
+
+
+
+-(BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler
+
+{
+    
+    //check if your activity has type search action(i.e. coming from spotlight search)
+    if ([userActivity.activityType isEqualToString:CSSearchableItemActionType ] == YES) {
+        
+        //the identifier you'll use to open specific views and the content in those views.
+        NSString * identifierPath = [NSString stringWithFormat:@"%@",[userActivity.userInfo objectForKey:CSSearchableItemActivityIdentifier]];
+        
+        if (identifierPath != nil) {
+            
+            // go to YOUR VIEWCONTROLLER
+            // use notifications or whatever you want to do so
+            
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+            BookMarksViewController * myViewController = [storyboard instantiateViewControllerWithIdentifier:@"BookMarkController"];
+            
+        
+            // this notification must be registered in MyViewController
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"OpenMyViewController" object: myViewController userInfo:nil];
+       
+            
+            
+            return YES;
+        }
+        
+    }
+    
+    
+    return NO;
 }
 
 @end

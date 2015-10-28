@@ -12,6 +12,10 @@
 		03601CE11BC2B146005FD919 /* BookMarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03601CE01BC2B146005FD919 /* BookMarksViewController.m */; };
 		03601CE41BC2B173005FD919 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03601CE31BC2B173005FD919 /* SearchViewController.m */; };
 		037AA84E1BD800EE000480CD /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 037AA84D1BD800EE000480CD /* Comment.m */; };
+		0387009B1BDFCC7E00F59BBB /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0387009A1BDFCC7E00F59BBB /* CoreSpotlight.framework */; };
+		0387009D1BDFCC9100F59BBB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0387009C1BDFCC9100F59BBB /* MobileCoreServices.framework */; };
+		0387009F1BDFCC9D00F59BBB /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0387009E1BDFCC9D00F59BBB /* Contacts.framework */; };
+		038700A11BDFCCA500F59BBB /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038700A01BDFCCA500F59BBB /* ContactsUI.framework */; };
 		03B7711B1BC14F2C009FBD7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7711A1BC14F2C009FBD7B /* main.m */; };
 		03B7711E1BC14F2C009FBD7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7711D1BC14F2C009FBD7B /* AppDelegate.m */; };
 		03B771211BC14F2C009FBD7B /* BuyOrLet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03B7711F1BC14F2C009FBD7B /* BuyOrLet.xcdatamodeld */; };
@@ -49,6 +53,10 @@
 		03601CE31BC2B173005FD919 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		037AA84C1BD800EE000480CD /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
 		037AA84D1BD800EE000480CD /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		0387009A1BDFCC7E00F59BBB /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		0387009C1BDFCC9100F59BBB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0387009E1BDFCC9D00F59BBB /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		038700A01BDFCCA500F59BBB /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
 		03B771151BC14F2C009FBD7B /* BuyOrLet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyOrLet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B771191BC14F2C009FBD7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03B7711A1BC14F2C009FBD7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +92,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				038700A11BDFCCA500F59BBB /* ContactsUI.framework in Frameworks */,
+				0387009F1BDFCC9D00F59BBB /* Contacts.framework in Frameworks */,
+				0387009D1BDFCC9100F59BBB /* MobileCoreServices.framework in Frameworks */,
+				0387009B1BDFCC7E00F59BBB /* CoreSpotlight.framework in Frameworks */,
 				0349BDE11BDEBF410033763B /* Social.framework in Frameworks */,
 				03D8683F1BC80450006D7C62 /* MessageUI.framework in Frameworks */,
 				421503605A5326F5383C6C9E /* libPods-BuyOrLet.a in Frameworks */,
@@ -272,6 +284,10 @@
 		6FA5A3F0EC00AD7137F33C74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				038700A01BDFCCA500F59BBB /* ContactsUI.framework */,
+				0387009E1BDFCC9D00F59BBB /* Contacts.framework */,
+				0387009C1BDFCC9100F59BBB /* MobileCoreServices.framework */,
+				0387009A1BDFCC7E00F59BBB /* CoreSpotlight.framework */,
 				0349BDE01BDEBF410033763B /* Social.framework */,
 				03D8683E1BC80450006D7C62 /* MessageUI.framework */,
 				7980C426EEB6A96F17A99331 /* libPods-BuyOrLet.a */,
@@ -325,7 +341,7 @@
 		03B7710D1BC14F2C009FBD7B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = TAE;
 				TargetAttributes = {
 					03B771141BC14F2C009FBD7B = {
@@ -489,6 +505,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -504,7 +521,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -541,7 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -555,6 +572,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BuyOrLet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TAE.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -566,6 +584,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BuyOrLet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TAE.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -584,6 +603,7 @@
 				);
 				INFOPLIST_FILE = BuyOrLetTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TAE.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuyOrLet.app/BuyOrLet";
 			};
@@ -599,6 +619,7 @@
 				);
 				INFOPLIST_FILE = BuyOrLetTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TAE.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuyOrLet.app/BuyOrLet";
 			};

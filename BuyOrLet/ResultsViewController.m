@@ -126,6 +126,7 @@
     NSString *tempTitle = [NSString stringWithFormat:@"Available for %@ %@ ",pL.listingStatus,pL.rentalPrice];
   [cell.progressIndicator startAnimating];
     
+    [cell.dispAddress setText:pL.displayableAddress];
     
     [cell.priceLabel setText:tempTitle];
     [cell.actionbutton setTag:indexPath.row];

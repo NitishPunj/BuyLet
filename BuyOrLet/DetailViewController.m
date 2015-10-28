@@ -11,6 +11,8 @@
 #import "UIImageView+AFNetworking.h"
 
 
+
+
 #define mainQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 @interface DetailViewController ()
 
@@ -193,8 +195,31 @@ else
     NSError *error = nil;
     
     if (![context save:&error]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Save Failed" message:[NSString stringWithFormat:@"Bookmark cannot be added%@", [error localizedDescription]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [alert show];
+          
+        
+        
+        
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"No results found" message:[NSString stringWithFormat:@"Bookmark cannot be added%@", [error localizedDescription]]  preferredStyle:UIAlertControllerStyleAlert];
+        
+        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+            NSLog(@"test15");
+        }]];
+        
+        
+     
+        
+        
+        [self presentViewController:alert animated:YES completion:nil];
+        
+        
+
+        
+        
+        
+        
+//        
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Save Failed" message:[NSString stringWithFormat:@"Bookmark cannot be added%@", [error localizedDescription]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//        [alert show];
     }
     else{
         
@@ -205,8 +230,43 @@ else
 }
 - (IBAction)addContact:(id)sender {
     
+//    var contact = new CNMutableContact();
+//    
+//    // Set standard properties
+//    contact.GivenName = "John";
+//    contact.FamilyName = "Appleseed";
+//    
+//    // Save new contact
+//    var store = new CNContactStore();
+//    var saveRequest = new CNSaveRequest();
+//    saveRequest.AddContact(contact, store.DefaultContainerIdentifier);
+//    
+//    NSError error;
+//    if (store.ExecuteSaveRequest(saveRequest, out error)) {
+//        Console.WriteLine("New contact saved");
+//    } else {
+//        Console.WriteLine("Save error: {0}", error);
+//    }
     
     
+    
+    
+    CNContactViewController *newPicker = [[CNContactViewController alloc]init];
+    
+    newPicker = [CNContactViewController viewControllerForNewContact:nil];
+    
+    
+        [self.navigationController pushViewController:newPicker animated:YES];
+    
+    
+    
+//    
+//    
+//    CNContactPickerViewController *picker =
+//    [[CNContactPickerViewController alloc]init];
+//    picker.delegate = self;
+//    
+//    [self presentViewController:picker animated:YES completion:nil];
     
     
     

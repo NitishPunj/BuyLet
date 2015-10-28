@@ -10,8 +10,11 @@
 #import "PropertyListing.h"
 #import "AppDelegate.h"
 #import <AddressBookUI/AddressBookUI.h>
+#import "ContactsUI/ContactsUI.h"
+#import "Contacts/Contacts.h"
 
-@interface DetailViewController : UIViewController
+
+@interface DetailViewController : UIViewController<CNContactPickerDelegate,CNContactViewControllerDelegate>
 
 @property(strong,nonatomic) PropertyListing *item;
 @property (weak

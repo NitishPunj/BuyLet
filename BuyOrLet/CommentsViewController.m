@@ -270,22 +270,56 @@ NSString* urlGetAll = [NSString stringWithFormat:@"%@/items.json",URL];
             
             
             if (statusErrorCode == 400){
-                UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"No results founds" message:@"Invalid Parameters" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
                 
                 
-               
-                [alert show];
+                UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"No results found" message:@"Invalid Parameters"  preferredStyle:UIAlertControllerStyleAlert];
                 
+                [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+                    NSLog(@"test11");
+                }]];
+                
+                
+                
+                [self presentViewController:alert animated:YES completion:nil];
+                
+
+                
+                
+//                
+//                UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"No results founds" message:@"Invalid Parameters" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+//                
+//                
+//               
+//                [alert show];
+//                
                 // [self.spinningWheel stopAnimating];
                 [MBProgressHUD hideHUDForView:self.view animated:YES];
             }
             else{
                 
                 
-                UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"No results founds" message:@"Offline - Try Again Later" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                
+                UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"No results found" message:@"Offline - Try Again Later"  preferredStyle:UIAlertControllerStyleAlert];
+                
+                [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+                    NSLog(@"test15");
+                }]];
+                
+                
+                
+                [self presentViewController:alert animated:YES completion:nil];
+                
+
+                
+                
+                
+                
+                
+//                
+//                UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"No results founds" message:@"Offline - Try Again Later" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         
         [MBProgressHUD hideHUDForView:self.view animated:YES];
-                 [alert show];
+              
             }
         }
         
@@ -298,12 +332,32 @@ NSString* urlGetAll = [NSString stringWithFormat:@"%@/items.json",URL];
     
         
         
-        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"No results founds" message:exception.reason delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"No results found" message:exception.reason  preferredStyle:UIAlertControllerStyleAlert];
+        
+        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+            NSLog(@"test15");
+        }]];
         
         
         [MBProgressHUD hideHUDForView:self.view animated:YES];
-       
-        [alert show];
+
+        
+        [self presentViewController:alert animated:YES completion:nil];
+        
+        
+
+        
+        
+        
+        
+        
+//        
+//        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"No results founds" message:exception.reason delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+//        
+        
+        
+        //[alert show];
         
 
       
