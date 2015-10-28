@@ -17,6 +17,7 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *actionbutton;
 @property (strong, nonatomic) IBOutlet UILabel *dispAddress;
+@property (strong, nonatomic) IBOutlet UILabel *adentName;
 
 //- (void)setDidTapButtonBlock:(void (^)(id sender))didTapButtonBlock;
 

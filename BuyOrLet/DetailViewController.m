@@ -136,6 +136,7 @@ else
 -(void)showText{
 
     self.detailDesciption.text = self.item.fullDescription;
+    self.agentName.text = self.item.agentName;
     
 }
 
@@ -256,7 +257,12 @@ else
     newPicker = [CNContactViewController viewControllerForNewContact:nil];
     
     
-        [self.navigationController pushViewController:newPicker animated:YES];
+    
+    [self presentViewController:newPicker animated:YES completion:nil];
+    
+    [newPicker dismissViewControllerAnimated:YES completion:nil];
+    
+   //[self.navigationController pushViewController:newPicker animated:YES];
     
     
     

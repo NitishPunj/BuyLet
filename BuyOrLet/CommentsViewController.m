@@ -10,6 +10,7 @@
 #import "Comment.h"
 #import "CustomCell.h"
 #import "MBProgressHUD.h"
+#import "CommentCellTableViewCell.h"
 
 #define URL @"https://cmshopper.herokuapp.com"
 #define Token @"c0e3ec60745ed3f45376d5801b6d4088"
@@ -23,6 +24,7 @@
     NSMutableArray * commentsArray;
     NSNumber * commentIDfor;
     NSIndexPath * indexForUpdate;
+    NSString *username;
     
 }
 
@@ -43,6 +45,12 @@
    // NSLog(@"%@",listingCategoryString);
     
     commentsArray = [[NSMutableArray alloc]init];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    username = [defaults stringForKey:@"username_preference"];
+    
+   
+
     
     [self LoadJson];
   //   self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -83,6 +91,8 @@
     refreshControl.backgroundColor = [UIColor grayColor];
     refreshControl.tintColor = [UIColor whiteColor];
     [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+    
+   // refreshControl.layer.zPosition = -1;
     [self.commentsTable addSubview:refreshControl];
     
 
@@ -144,19 +154,21 @@ if(refreshControl){
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *simpleTableIdentifier = @"SimpleCell";
-    UITableViewCell *cell = (CustomCell*)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    static NSString *simpleTableIdentifier = @"SimpleCommentCell";
+    CommentCellTableViewCell *cell = (CommentCellTableViewCell*)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:simpleTableIdentifier];
-
-    }
+   // if (cell )
     
     Comment *tempobject = [commentsArray objectAtIndex:indexPath.row];
-
-    [cell.detailTextLabel setText:tempobject.commentText];
-    NSLog(@"%@",tempobject.commentText);
+   // cell.titleLabel.text = username;
+    
+    [cell.username setText:username];
+    
+    [cell.commentText setText:tempobject.commentText];
+    NSLog(@"%@",tempobject.dateAdded);
+    
+    
+    [cell.dateAdded setText:tempobject.dateAdded];
     
     
     return cell;

@@ -16,12 +16,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+   _uName.text = [defaults valueForKey:@"username_preference"];
+    _uPass.text = [defaults valueForKey:@"password_preference"];
+    
+    
+    
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Get user preference
+    return NO;
+    
 }
 
 /*

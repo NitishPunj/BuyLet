@@ -10,6 +10,7 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <CoreSpotlight/CoreSpotlight.h>
 #import "BookMarksViewController.h"
+#import "LogInViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +21,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSDictionary *appDefaults = [NSDictionary dictionaryWithObject:@"YES"
+                                                            forKey:@"enableRotation"];
+    [defaults registerDefaults:appDefaults];
+    [defaults synchronize];
     return YES;
 }
+
+
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -137,22 +150,23 @@
     if ([userActivity.activityType isEqualToString:CSSearchableItemActionType ] == YES) {
         
         //the identifier you'll use to open specific views and the content in those views.
-        NSString * identifierPath = [NSString stringWithFormat:@"%@",[userActivity.userInfo objectForKey:CSSearchableItemActivityIdentifier]];
+        self.identifierPath = [NSString stringWithFormat:@"%@",[userActivity.userInfo objectForKey:CSSearchableItemActivityIdentifier]];
         
-        if (identifierPath != nil) {
+        if (self.identifierPath != nil) {
             
             // go to YOUR VIEWCONTROLLER
             // use notifications or whatever you want to do so
             
-            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
-            BookMarksViewController * myViewController = [storyboard instantiateViewControllerWithIdentifier:@"BookMarkController"];
-            
-        
-            // this notification must be registered in MyViewController
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"OpenMyViewController" object: myViewController userInfo:nil];
+//            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+//            BookMarksViewController * myViewController = [storyboard instantiateViewControllerWithIdentifier:@"BookMarkController"];
+//            
+//        
+//            // this notification must be registered in MyViewController
+//            [[NSNotificationCenter defaultCenter] postNotificationName:@"OpenMyViewController" object: myViewController userInfo:nil];
        
-            
-            
+            LogInViewController *logInVC = (LogInViewController *)[self.window rootViewController];
+            [logInVC performSegueWithIdentifier:@"SkipLoginSegue"
+                                         sender:nil];
             return YES;
         }
         

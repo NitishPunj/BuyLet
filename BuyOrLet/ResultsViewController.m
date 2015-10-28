@@ -13,7 +13,11 @@
 #import "UIImageView+AFNetworking.h"
 #import "CommentsViewController.h"
 
-@interface ResultsViewController ()
+@interface ResultsViewController (){
+
+    
+
+}
 
 @end
 
@@ -24,16 +28,31 @@
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     
-    refreshControl.backgroundColor = [UIColor purpleColor];
+    refreshControl.backgroundColor = [UIColor grayColor];
     refreshControl.tintColor = [UIColor whiteColor];
     [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+    refreshControl.layer.zPosition = -1;
     [self.tableResults addSubview:refreshControl];
+    
+        
 
 }
 
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Get user preference
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL enabled = [defaults boolForKey:@"enableRotation"];
+    
+    if (enabled) {
+        return YES;
+    } else {
+        return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    }
+}
+
 - (void)refresh:(UIRefreshControl *)refreshControl {
-    // Do your job, when done:
+   
     [self.tableResults reloadData];
     
     
@@ -48,7 +67,7 @@
                                                                 forKey:NSForegroundColorAttributeName];
     NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:title attributes:attrsDictionary];
     refreshControl.attributedTitle = attributedTitle;
-    
+        
     [refreshControl endRefreshing];
     }
 }
@@ -123,7 +142,7 @@
     PropertyListing *pL = [_tableArray objectAtIndex:[indexPath row]];
     
    [ cell.shortDescriptionLabel setText: pL.shortDescription];
-    NSString *tempTitle = [NSString stringWithFormat:@"Available for %@ %@ ",pL.listingStatus,pL.rentalPrice];
+    NSString *tempTitle = [NSString stringWithFormat:@"Aiailable for %@ %@ ",pL.listingStatus,pL.rentalPrice];
   [cell.progressIndicator startAnimating];
     
     [cell.dispAddress setText:pL.displayableAddress];

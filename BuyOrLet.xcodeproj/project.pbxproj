@@ -16,6 +16,8 @@
 		0387009D1BDFCC9100F59BBB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0387009C1BDFCC9100F59BBB /* MobileCoreServices.framework */; };
 		0387009F1BDFCC9D00F59BBB /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0387009E1BDFCC9D00F59BBB /* Contacts.framework */; };
 		038700A11BDFCCA500F59BBB /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038700A01BDFCCA500F59BBB /* ContactsUI.framework */; };
+		038700A31BE04EC100F59BBB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 038700A21BE04EC100F59BBB /* Settings.bundle */; };
+		038700A61BE0ED3600F59BBB /* CommentCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 038700A51BE0ED3600F59BBB /* CommentCellTableViewCell.m */; };
 		03B7711B1BC14F2C009FBD7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7711A1BC14F2C009FBD7B /* main.m */; };
 		03B7711E1BC14F2C009FBD7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7711D1BC14F2C009FBD7B /* AppDelegate.m */; };
 		03B771211BC14F2C009FBD7B /* BuyOrLet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03B7711F1BC14F2C009FBD7B /* BuyOrLet.xcdatamodeld */; };
@@ -57,6 +59,9 @@
 		0387009C1BDFCC9100F59BBB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		0387009E1BDFCC9D00F59BBB /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		038700A01BDFCCA500F59BBB /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		038700A21BE04EC100F59BBB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		038700A41BE0ED3600F59BBB /* CommentCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentCellTableViewCell.h; sourceTree = "<group>"; };
+		038700A51BE0ED3600F59BBB /* CommentCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentCellTableViewCell.m; sourceTree = "<group>"; };
 		03B771151BC14F2C009FBD7B /* BuyOrLet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyOrLet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B771191BC14F2C009FBD7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03B7711A1BC14F2C009FBD7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -200,6 +205,7 @@
 				03B7712A1BC14F2C009FBD7B /* LaunchScreen.xib */,
 				03B7711F1BC14F2C009FBD7B /* BuyOrLet.xcdatamodeld */,
 				03B771181BC14F2C009FBD7B /* Supporting Files */,
+				038700A21BE04EC100F59BBB /* Settings.bundle */,
 			);
 			path = BuyOrLet;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 		03D1870D1BCC0BE5001652FC /* CustomCellClass */ = {
 			isa = PBXGroup;
 			children = (
+				038700A41BE0ED3600F59BBB /* CommentCellTableViewCell.h */,
+				038700A51BE0ED3600F59BBB /* CommentCellTableViewCell.m */,
 				03D8683C1BC6A324006D7C62 /* CustomCell.m */,
 				03D8683B1BC6A324006D7C62 /* CustomCell.h */,
 			);
@@ -377,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				038700A31BE04EC100F59BBB /* Settings.bundle in Resources */,
 				03D867FF1BC5156F006D7C62 /* Main.storyboard in Resources */,
 				03B7712C1BC14F2C009FBD7B /* LaunchScreen.xib in Resources */,
 				03B771291BC14F2C009FBD7B /* Images.xcassets in Resources */,
@@ -443,6 +452,7 @@
 				03601CDE1BC2B123005FD919 /* DetailViewController.m in Sources */,
 				03D187281BD4F5E5001652FC /* CommentsViewController.m in Sources */,
 				03D8683A1BC6621A006D7C62 /* PropertyListing.m in Sources */,
+				038700A61BE0ED3600F59BBB /* CommentCellTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

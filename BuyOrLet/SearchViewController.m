@@ -31,7 +31,11 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
 
 }
 
-
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Get user preference
+    return NO;
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,6 +44,14 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
     
     
     
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    if (((AppDelegate *)[UIApplication sharedApplication].delegate).identifierPath != nil) {
+        [self.tabBarController setSelectedIndex:1];
+        ((AppDelegate *)[UIApplication sharedApplication].delegate).identifierPath = nil;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

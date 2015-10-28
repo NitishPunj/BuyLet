@@ -321,6 +321,7 @@
     else
     pL = [bookmarkArray objectAtIndex:[indexPath row]];
     
+    [cell.adentName setText:pL.agentName];
     
     [ cell.shortDescriptionLabel setText: pL.shortDescripton];
     NSString *tempTitle = [NSString stringWithFormat:@"Available for %@ %@ ",pL.listingStatus,pL.rentalPrice];
