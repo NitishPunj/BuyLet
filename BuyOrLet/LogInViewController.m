@@ -7,7 +7,9 @@
 //
 
 #import "LogInViewController.h"
-
+//#import "AFNetworking.h"
+#import "SearchViewController.h"
+//#import "AFNetworkReachabilityManager.h"
 @interface LogInViewController ()
 
 @end
@@ -33,11 +35,120 @@
 
 
 
--(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+- (BOOL)shouldAutorotate {
     // Get user preference
-    return NO;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL enabled = [defaults boolForKey:@"enableRotation"];
     
+    if (enabled) {
+        return NO;
+    } else {
+        return YES;
+    }
 }
+
+
+-(void)showView{
+
+    
+    [self performSegueWithIdentifier: @"ShowOnline" sender: self];
+//[self.tabBarController setSelectedIndex:0];
+//
+//    SearchViewController *viewController = [[SearchViewController alloc] init];
+//    [self.tabBarController pushViewController:viewController animated:YES];
+//    
+    
+    
+
+}
+
+- (BOOL)connected {
+    return [AFNetworkReachabilityManager sharedManager].reachable;
+}
+
+
+-(void)checkConnection{
+    
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL wifiEnabled = [defaults boolForKey:@"use_wifi_preference"];
+    
+    BOOL dataEnabled = [defaults boolForKey:@"use_data_preference"];
+    
+    
+    
+    
+    BOOL connect = [self connected];
+    if (!connect)
+        
+        NSLog(@" no internet");
+    
+    else
+        NSLog(@"internet working");
+    
+
+    
+    
+    //***************** Only For Simulator Testing ***********************
+    if (wifiEnabled || dataEnabled)
+    {
+        
+        if(!wifiEnabled){
+            
+            
+            UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"No Wifi Access" message:@"Turn on Access"  preferredStyle:UIAlertControllerStyleAlert];
+            
+            [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+                NSLog(@"test122");
+                
+            }]];
+            
+            
+            [self presentViewController:alert animated:YES completion:nil];
+            
+            
+            
+            
+            }else
+            
+            {
+                [self showView];
+            }
+        }
+    else if(!dataEnabled){
+        
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"No Mobile Data" message:@"Turn On Mobile Access"  preferredStyle:UIAlertControllerStyleAlert];
+        
+        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+            NSLog(@"test123");
+            
+        }]];
+        
+        
+        [self presentViewController:alert animated:YES completion:nil];
+        
+
+        
+        
+            }
+        else
+        {
+                [self showView];
+            }
+    
+    
+    
+    
+    
+    
+
+}
+
+
+
+
+
+
 
 /*
 #pragma mark - Navigation
@@ -49,4 +160,10 @@
 }
 */
 
+- (IBAction)lgBtn:(id)sender {
+    
+    [self checkConnection];
+    
+    
+}
 @end

@@ -121,12 +121,28 @@ if(refreshControl){
 }
 }
 
-
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.commentText resignFirstResponder];
+    [self.editTextbox resignFirstResponder];
+    
+}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
 }
+
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    
+    if([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    
+    return YES;
+}
+
 
 
 - (void)didReceiveMemoryWarning {

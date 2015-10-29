@@ -11,5 +11,6 @@
 @interface LogInViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITextField *uName;
 @property (strong, nonatomic) IBOutlet UITextField *uPass;
+- (IBAction)lgBtn:(id)sender;
 
 @end

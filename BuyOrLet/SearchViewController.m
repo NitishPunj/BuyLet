@@ -179,7 +179,7 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
                      if (statusErrorCode == 400){
                          
                          UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"No results found" message:@"Invalid Parameters"  preferredStyle:UIAlertControllerStyleAlert];
-                         
+                        
 //                         UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"No results founds" message:@"Invalid Parameters" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
 //                         
 //
@@ -256,6 +256,26 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
 }
 
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.area resignFirstResponder];
+    [self.postcode resignFirstResponder];
+    [self.radius resignFirstResponder];
+    [self.street resignFirstResponder];
+    [self.beds resignFirstResponder];
+    [self.rent resignFirstResponder];
+    
+    
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
+
+
+
+
 
 
 -(void)addToRetrivedResults:(NSArray *)listingDict{
@@ -310,12 +330,18 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
             
             
           myController.tableArray = [[NSMutableArray alloc] initWithArray:resultsArray];
-           // [myController.tableResults reloadData];
+            [myController.tableResults reloadData];
                           [self.navigationController pushViewController: myController animated:YES];
+            
+            
+//            [self presentViewController: myController animated:YES completion:nil];
         
           }
 
 }
+
+
+
 
 
 

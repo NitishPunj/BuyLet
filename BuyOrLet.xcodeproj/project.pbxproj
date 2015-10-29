@@ -18,6 +18,7 @@
 		038700A11BDFCCA500F59BBB /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038700A01BDFCCA500F59BBB /* ContactsUI.framework */; };
 		038700A31BE04EC100F59BBB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 038700A21BE04EC100F59BBB /* Settings.bundle */; };
 		038700A61BE0ED3600F59BBB /* CommentCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 038700A51BE0ED3600F59BBB /* CommentCellTableViewCell.m */; };
+		038700A81BE179B600F59BBB /* SearchTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 038700A71BE179B600F59BBB /* SearchTestCase.m */; };
 		03B7711B1BC14F2C009FBD7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7711A1BC14F2C009FBD7B /* main.m */; };
 		03B7711E1BC14F2C009FBD7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7711D1BC14F2C009FBD7B /* AppDelegate.m */; };
 		03B771211BC14F2C009FBD7B /* BuyOrLet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03B7711F1BC14F2C009FBD7B /* BuyOrLet.xcdatamodeld */; };
@@ -62,6 +63,7 @@
 		038700A21BE04EC100F59BBB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		038700A41BE0ED3600F59BBB /* CommentCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentCellTableViewCell.h; sourceTree = "<group>"; };
 		038700A51BE0ED3600F59BBB /* CommentCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentCellTableViewCell.m; sourceTree = "<group>"; };
+		038700A71BE179B600F59BBB /* SearchTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTestCase.m; sourceTree = "<group>"; };
 		03B771151BC14F2C009FBD7B /* BuyOrLet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyOrLet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B771191BC14F2C009FBD7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03B7711A1BC14F2C009FBD7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				03B771371BC14F2C009FBD7B /* BuyOrLetTests.m */,
+				038700A71BE179B600F59BBB /* SearchTestCase.m */,
 				03B771351BC14F2C009FBD7B /* Supporting Files */,
 			);
 			path = BuyOrLetTests;
@@ -461,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03B771381BC14F2C009FBD7B /* BuyOrLetTests.m in Sources */,
+				038700A81BE179B600F59BBB /* SearchTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

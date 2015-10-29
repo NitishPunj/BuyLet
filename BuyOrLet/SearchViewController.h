@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AFNetworking.h"
 
-@interface SearchViewController : UIViewController
+@interface SearchViewController : UIViewController <UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *area;
 @property (strong, nonatomic) IBOutlet UITextField *street;
 @property (strong, nonatomic) IBOutlet UITextField *radius;
