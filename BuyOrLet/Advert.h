@@ -1,4 +1,4 @@
-//
+//coreData class for PropertyListings
 //  Advert.h
 //  BuyOrLet
 //

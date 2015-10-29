@@ -8,6 +8,14 @@
 //  Copyright (c) 2015 TAE. All rights reserved.
 //
 
+
+//----------------BookMarksViewController implements Core Data Advert.h-------------------------
+//This view controller uses spotlight search which passed the keywords of agentNames and helps the iphone to index the user results.
+//SMS functionality on didselectCellforrowatindePath,on tap the app willl open the MFmessageViewcontroller and pass the number and short message to it.
+//Implemens UISearchbardelegate to add more confort for the user to search for the specific item in our array of Bookmarks
+
+
+
 #import "BookMarksViewController.h"
 #import "CustomCell.h"
 #import "AppDelegate.h"
@@ -16,9 +24,6 @@
 #import <MessageUI/MessageUI.h>
 #import <CoreSpotlight/CoreSpotlight.h>
 #import <MobileCoreServices/MobileCoreServices.h>
-
-
-
 
 
 @interface BookMarksViewController ()<MFMessageComposeViewControllerDelegate,MFMailComposeViewControllerDelegate>{
@@ -61,18 +66,7 @@
 
 
 -(void)setupCoreSpotlightSearch{
-//    CSSearchableItemAttributeSet *attributeSet;
-//    attributeSet = [[CSSearchableItemAttributeSet alloc]
-//                    initWithItemContentType:(NSString *)kUTTypeImage];
-//    
-//    attributeSet.title = @"BuyorLet";
-//    attributeSet.contentDescription = @"Finding properties is easy";
-//   // attributeSet.keywords = @[keywords];
-//    
-//    
-//    UIImage *image = [UIImage imageNamed:@"house"];
-//    NSData *imageData = [NSData dataWithData:UIImagePNGRepresentation(image)];
-//    attributeSet.thumbnailData = imageData;
+    
     
     
     NSMutableArray *mutArray = [[NSMutableArray alloc] init];
@@ -117,19 +111,7 @@
         NSLog(@"Spotlight Log");
     }];
     
-    
-//    
-//    CSSearchableItem *item = [[CSSearchableItem alloc]
-//                              initWithUniqueIdentifier:@"com.buylet"
-//                              domainIdentifier:@"spotlight.sam"
-//                              attributeSet:attributeSet];
-//    
-//    [[CSSearchableIndex defaultSearchableIndex] indexSearchableItems:@[item]
-//                                                   completionHandler: ^(NSError * __nullable error) {
-//                                                       if (!error)
-//                                                           NSLog(@"Search item indexed");
-//                                                   }];
-//
+
 
 }
 
@@ -272,6 +254,11 @@
 
 -(void)searchBar:(UISearchBar*)searchBar textDidChange:(NSString*)text
 {
+    
+    //to add more convienence a searchbar added for the user to directly search for the specific item.
+    
+    //Used UISearchBarDelegate for the searchBar.
+    
     if(text.length == 0)
     {
         
@@ -281,6 +268,9 @@
         
     }
     else
+        //if searchbar contains any text then we will match it against the bookmark array items and add each mathing item to the FilteredArray and present the filtered array.
+        
+        
     {
         isFiltered = TRUE;
         filteredData = [[NSMutableArray alloc] init];
@@ -315,7 +305,7 @@
     CustomCell *cell = (CustomCell*)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     Advert *pL;
     
-    if(isFiltered)
+    if(isFiltered)//checking the Boolean isFiltered to display the filteredArray
     { pL = [filteredData objectAtIndex:[indexPath row]];
     }
     else
@@ -341,7 +331,7 @@
         
         
         
-//  ------  Using AF Networking for downloading images now, but the below code can  be used instead----------------  AF networking works better as it cashes the images and make them availe in offline mode for  a time
+//  ------  Using AF Networking for downloading images now, but the below code can  be used instead----------------  AF networking works better as it caches the images and make them availe in offline mode for  a time
         
         
         
@@ -442,7 +432,8 @@
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
-if(isFiltered)
+if(isFiltered)// editing only allowed when searchBar is empty.
+    
     return NO;
     
    else

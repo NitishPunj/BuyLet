@@ -1,4 +1,4 @@
-//
+//CoreData Class for Comments
 //  Comment.h
 //  BuyOrLet
 //

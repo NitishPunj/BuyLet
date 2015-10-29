@@ -1,10 +1,25 @@
 //
-//  CommentsViewController.m
+// -------- CommentsViewController.m-----------------
+//------------CommentsViewController impletemts ControllerViewController.h-------------
 //  BuyOrLet
 //
 //  Created by TAE on 19/10/2015.
 //  Copyright (c) 2015 TAE. All rights reserved.
-//Third Party Libraries  used : AFNetworking and MBProgressHUD
+
+
+
+/*CommentsViewController impletemts ControllerViewController.h
+ This class contains a tableview which displays all the comments that corresond to a particular ListingID(Zoopla API)
+ Custom cell used for the tableview which is an object of class CommentCellTableViewCell.h
+  Third Party Libraries  used : AFNetworking and MBProgressHUD
+ 
+ //By default editcommentView is hidden as it will only be shown when user wants to edit a comment.
+
+ 
+ 
+*/
+
+
 
 #import "CommentsViewController.h"
 #import "Comment.h"
@@ -21,7 +36,7 @@
 
 {
 
-    NSMutableArray * commentsArray;
+    NSMutableArray * commentsArray;   // commentsArray contains an array of the Comment.h class objects.
     NSNumber * commentIDfor;
     NSIndexPath * indexForUpdate;
     NSString *username;
@@ -36,29 +51,33 @@
 
 @ synthesize commentText,listingCategoryString;
 
+//By default editcommentView is hidden as it will only be shown when user wants to edit a comment.
 
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [commentsArray removeAllObjects];
-   // NSLog(@"%@",listingCategoryString);
+       //testing only
+    //-------empty all previous objects from the commentsArray----------
+//     [commentsArray count];
+//    [commentsArray removeAllObjects];
+//   // NSLog(@"%@",listingCategoryString);
     
     commentsArray = [[NSMutableArray alloc]init];
-    
+    //taking the username from the settings bundle and would show it in each comment added by the user.
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     username = [defaults stringForKey:@"username_preference"];
-    
-   
-
-    
     [self LoadJson];
-  //   self.navigationItem.rightBarButtonItem = self.editButtonItem;
+ 
 }
 
 
 
-//The below code I ADDED TO ENABLE OR DISABLE EDITITNG but then I thought, I do not need it at the moment, So it is JUST HERE TO BE USED IN THE FUTURE
+//-------------The below code I ADDED TO ENABLE OR DISABLE EDITITNG but then I thought, I do not need it at the moment, So it is JUST HERE TO BE USED IN THE FUTURE---------------------
+
+
+
+
 //- (void)setEditing:(BOOL)editing animated:(BOOL)animated
 //{
 //    // Make sure you call super first
@@ -84,15 +103,20 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     // For some reason the tableview does not do it automatically
+    
+    
+    
     [self.commentsTable deselectRowAtIndexPath:self.commentsTable.indexPathForSelectedRow
                                      animated:YES];
+    //UIrefreshcontrol Added as a subview to our table view incase the user wants to reload the comments from the JSON Webservice manually again.
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     
     refreshControl.backgroundColor = [UIColor grayColor];
     refreshControl.tintColor = [UIColor whiteColor];
     [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+    //refresh method will be called when we intiate a refresh control
     
-   // refreshControl.layer.zPosition = -1;
+    refreshControl.layer.zPosition = -1;
     [self.commentsTable addSubview:refreshControl];
     
 
@@ -121,18 +145,21 @@ if(refreshControl){
 }
 }
 
+//---- used to resign the keyboard on touch on the view---------
+
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.commentText resignFirstResponder];
     [self.editTextbox resignFirstResponder];
     
 }
 
+//SearchViewcontroller implements UITextfieldDelegate and thus this method will be called to resign the keyboard on return from the commentText UItextfield
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
 }
 
-
+//SearchViewcontroller implements UITextViewDelegate and thus this method will be called to resign the keyboard on return from the editTextBox (UItextview
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
     
     if([text isEqualToString:@"\n"]) {
@@ -171,17 +198,16 @@ if(refreshControl){
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *simpleTableIdentifier = @"SimpleCommentCell";
+    //customcellClass: CommentCellTableViewCell used for the commentCell
+    
     CommentCellTableViewCell *cell = (CommentCellTableViewCell*)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
-   // if (cell )
-    
     Comment *tempobject = [commentsArray objectAtIndex:indexPath.row];
-   // cell.titleLabel.text = username;
-    
+ 
     [cell.username setText:username];
     
     [cell.commentText setText:tempobject.commentText];
-    NSLog(@"%@",tempobject.dateAdded);
+   //Testing: NSLog(@"%@",tempobject.dateAdded);
     
     
     [cell.dateAdded setText:tempobject.dateAdded];
@@ -203,7 +229,8 @@ if(refreshControl){
    
     
    }
-
+//Implementation for the Edit and Delete button on the cell
+//
 
 - (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -211,7 +238,7 @@ if(refreshControl){
         
         Comment *comObject = [commentsArray objectAtIndex:indexPath.row];
         NSNumber *temp = comObject.userID;
-        NSLog(@"%@",temp);
+       // NSLog(@"%@",temp);
         
         [self deleteComment:(NSNumber*)temp :(NSIndexPath *)indexPath];
         
@@ -224,25 +251,14 @@ if(refreshControl){
         //this will be passed on to the edit button function
         Comment *comObject = [commentsArray objectAtIndex:indexPath.row];
        // NSNumber *temp = comObject.userID;
+        
+        //once user presses on the dit button we will hide the baseview and pass the appopriate user comment text to the editTextbox.
+       // and then show the editCommentView
+        
         [self.baseView setHidden:YES];
         
-//        
-//        if (!UIAccessibilityIsReduceTransparencyEnabled()) {
-//            self.editCommentView.backgroundColor = [UIColor clearColor];
-//            
-//            UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
-//            UIVisualEffectView *blurEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
-//            blurEffectView.frame = self.view.bounds;
-//            blurEffectView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-//            
-//            [self.editCommentView addSubview:blurEffectView];
-//        }  
-//        else {
-//            self.editCommentView.backgroundColor = [UIColor blackColor];
-//        }
         self.editTextbox.text = comObject.commentText;
        
-        
         commentIDfor = comObject.userID;
         indexForUpdate = indexPath;
         
@@ -685,7 +701,7 @@ NSString* urlGetAll = [NSString stringWithFormat:@"%@/items.json",URL];
     [MBProgressHUD hideHUDForView:self.view animated:YES];
    [self.commentsTable reloadData];
     
-    //scrolling to tthe bottom of the table where the new comment gets added
+    //scrolling to the bottom of the table where the new comment gets added
     
     CGFloat height = self.commentsTable.contentSize.height - self.commentsTable.bounds.size.height;
     [self.commentsTable setContentOffset:CGPointMake(0, height) animated:YES];
@@ -698,6 +714,8 @@ NSString* urlGetAll = [NSString stringWithFormat:@"%@/items.json",URL];
 
 
 - (IBAction)cancelEditButton:(id)sender {
+    
+    //if user cancels out of the ediditng then we only reload the specific row using the indexForUpdate(NSIndexPath*) array.
     [self.editCommentView setHidden:YES];
     [self.baseView setHidden:NO];
     

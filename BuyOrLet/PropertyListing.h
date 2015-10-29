@@ -1,13 +1,13 @@
 //
 //  PropertyListing.h
 //  BuyOrLet
-//
+//  Property listing Class used to serve as my userdefiend data type for storing the adverts fetched from the Zoopla Api
 //  Created by TAE on 08/10/2015.
 //  Copyright (c) 2015 TAE. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-
+//below properties used for storing and presenting the fetched information from Zoopla API
 @interface PropertyListing : NSObject
 @property (strong,nonatomic) NSString * agentName;
 @property (strong,nonatomic) NSString * agentNumber;

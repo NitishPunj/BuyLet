@@ -10,6 +10,8 @@
 #import "AFNetworking.h"
 #import "UIImageView+AFNetworking.h"
 
+//Long press gesture added on the DetailviewController, this will save the given result into our core data and present it in the bookmark view controller.
+//IOS Contacts UI also implemented to add the contact to the contatcs lists.
 
 
 
@@ -52,7 +54,7 @@
     else if (sender.state == UIGestureRecognizerStateBegan){
         NSLog(@"UIGestureRecognizerStateBegan.");
         //Do Whatever You want on Began of Gesture
-         [self addToBookmarks];
+         [self addToBookmarks]; //saves it to core data
     }
 }
 
@@ -70,7 +72,9 @@
     // NSString *str = self.item.floorPlanURL;
 //NSLog(@"Getting %@...", self.item.floorPlanURL);
     NSString *str = self.item.imageURL;
-       if(str!=nil){
+       if(str!=nil)//checking if the url is not nil so that we should send the request for download asnchronously using UIImage +AFNetworking
+       
+       {
       
 
            
@@ -173,6 +177,7 @@ else
 
 
 - (void)addToBookmarks {
+    //saving the item to our coreData Advert entity.
     
     
     NSManagedObjectContext *context = [self managedObjectContext];
@@ -200,7 +205,7 @@ else
         
         
         
-        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"No results found" message:[NSString stringWithFormat:@"Bookmark cannot be added%@", [error localizedDescription]]  preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Save failed" message:[NSString stringWithFormat:@"Bookmark cannot be added%@", [error localizedDescription]]  preferredStyle:UIAlertControllerStyleAlert];
         
         [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
             NSLog(@"test15");
@@ -224,13 +229,23 @@ else
     }
     else{
         
+        
+        
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Added to Bookmarks" message:@"Save Successful "  preferredStyle:UIAlertControllerStyleAlert];
+        
+        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+            NSLog(@"test15");
+        }]];
+        
+          [self presentViewController:alert animated:YES completion:nil];
+        
         NSLog(@"Context Saved");
         
     }
 
 }
 - (IBAction)addContact:(id)sender {
-    
+   //Some issues with the Contatcs UI so not implemented 
 //    var contact = new CNMutableContact();
 //    
 //    // Set standard properties

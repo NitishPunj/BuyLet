@@ -1,5 +1,5 @@
 //
-//  ResultsViewController.m
+//  ResultsViewController.m implements ResultsViewController.h
 //  BuyOrLet
 //
 //  Created by TAE on 05/10/2015.
@@ -72,7 +72,7 @@
     if(_tableArray != nil)
     
     {
-
+//exception in resluts due to ambigious data been sent.
             
          if([_tableArray count] < 1)
              
@@ -81,7 +81,7 @@
                 
                 UILabel *messageLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.tableResults.bounds.size.width, self.tableResults.bounds.size.height)];
                 
-                messageLabel.text = @"Ambiguition in Area field.  Please try using postcode only";
+                messageLabel.text = @"Ambiguition in Area field.  Please try again using postcode only";
                 messageLabel.textColor = [UIColor blackColor];
                 messageLabel.numberOfLines = 0;
                 messageLabel.textAlignment = NSTextAlignmentCenter;
@@ -140,7 +140,7 @@
      [cell.actionbutton addTarget:self action:@selector(didTapButton:) forControlEvents:UIControlEventTouchUpInside];
     
     NSString *strThumbnailURL = pL.thumbpailImageURL;
-    if(strThumbnailURL!=nil)
+    if(strThumbnailURL!=nil)//checking if the url is not nil
     {
     
     dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
@@ -151,7 +151,8 @@
         NSData *image = [[NSData alloc] initWithContentsOfURL:imageURL];
         
         
-        if (image !=nil){
+        if (image !=nil)//checking if we have downloaded the image successfully.
+        {
             
            
             
@@ -188,7 +189,8 @@
     
     }
     
-    else {
+    else //if url is nil then simply add the placeholder image to the cell at index path.
+    {
         dispatch_async(dispatch_get_main_queue(), ^{
             
      
@@ -273,7 +275,7 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
+    //if tap on the cell then we will display the detail view controller and pass it the Propertylisting object item.
     
     if ([segue.identifier isEqualToString:@"DetailSegue"])
     {
@@ -294,6 +296,8 @@
 - (void)didTapButton:(id)sender {
        
     UIButton *button = (UIButton *)sender;
+    
+    //if review button is tapped we will go to the comments view controller and pass it the listingId for the cell at index path and that will then use it to fetch all the data from the comments webservice. 
     
     // Find Point in Superview
     //    CGPoint pointInSuperview = [button.superview convertPoint:button.center toView:self.tableResults];

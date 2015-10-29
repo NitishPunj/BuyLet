@@ -48,6 +48,10 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    
+    //launching app from spotlight search, as we check the identifierPath and present the tabbarcontroller index1 viewcontroller.
+    
+    
     if (((AppDelegate *)[UIApplication sharedApplication].delegate).identifierPath != nil) {
         [self.tabBarController setSelectedIndex:1];
         ((AppDelegate *)[UIApplication sharedApplication].delegate).identifierPath = nil;
@@ -64,7 +68,7 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
     
     
 //using AFNetworking 3rd party library to get results from the Zoopla API
-//another way just for reference  - needs refactoring
+//another way just for reference
 //NSString *string = [NSString stringWithFormat:@"%@", BaseURLString];
 //NSURL *url = [NSURL URLWithString:string];
 //NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -161,6 +165,8 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
             NSArray *listingDict= [resultsDictionary objectForKey:@"listing"];
             
             resultsFound = YES;
+            
+            //call to addToRetrivedresultsMethod by passing the NSArray called listingDict
             
             [ self addToRetrivedResults:listingDict];
             
@@ -281,10 +287,12 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
 -(void)addToRetrivedResults:(NSArray *)listingDict{
     
     
-  
+  //looping through all the dictionaries in our response array of dictionaries
 
     for(NSDictionary *d in listingDict){
         
+        //creating a temporary object of our PropertyListing class which then will be added to the resultsarray
+        //resultsarray is the array which then is passed to the resultsViewController.
         
         PropertyListing * property =[[PropertyListing alloc]init];
         
@@ -323,7 +331,7 @@ static NSString * const BaseURLString = @"http://api.zoopla.co.uk/api/v1/propert
     
         if(resultsArray !=nil){
             
-   
+   //if we have found the results then we will pass the resultsarray by instatianting the ResultsViewController and passing it the array which then is pushed onto the navigation controller.
            ResultsViewController *myController = [self.storyboard instantiateViewControllerWithIdentifier:@"TableResults"];
          //[self.spinningWheel stopAnimating];
          [MBProgressHUD hideHUDForView:self.view animated:YES];
