@@ -29,6 +29,8 @@
 
 @property (strong,nonatomic) NSManagedObjectContext *context;
 @property (strong,nonatomic) NSFetchedResultsController *fetchedResultsController;
+- (IBAction)callAgent:(id)sender;
+
 
 
 @end

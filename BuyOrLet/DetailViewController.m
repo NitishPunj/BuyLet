@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 #import "AFNetworking.h"
 #import "UIImageView+AFNetworking.h"
+@import Contacts;
 
 //Long press gesture added on the DetailviewController, this will save the given result into our core data and present it in the bookmark view controller.
 //IOS Contacts UI also implemented to add the contact to the contatcs lists.
@@ -145,11 +146,6 @@ else
 }
 
 
--(void)callOrSendEmail{
-
-
-
-}
 
 
 - (NSManagedObjectContext *)managedObjectContext {
@@ -244,53 +240,122 @@ else
     }
 
 }
+
+
+
+
+
 - (IBAction)addContact:(id)sender {
-   //Some issues with the Contatcs UI so not implemented 
-//    var contact = new CNMutableContact();
-//    
-//    // Set standard properties
-//    contact.GivenName = "John";
-//    contact.FamilyName = "Appleseed";
-//    
-//    // Save new contact
-//    var store = new CNContactStore();
-//    var saveRequest = new CNSaveRequest();
-//    saveRequest.AddContact(contact, store.DefaultContainerIdentifier);
-//    
-//    NSError error;
-//    if (store.ExecuteSaveRequest(saveRequest, out error)) {
-//        Console.WriteLine("New contact saved");
-//    } else {
-//        Console.WriteLine("Save error: {0}", error);
-//    }
+   //Some issues with the Contatcs UI so not implemented
+    
+    CNMutableContact * newCon = [CNMutableContact alloc];
+    newCon.givenName = self.item.agentName;
+    NSError *error = NULL;
+NSString *contactNumber = [self.item.agentNumber stringByReplacingOccurrencesOfString:@" " withString:@""];
+   
+   // CNLabeledValue<CNPhoneNumber*>* labeledValue = contactNumber;
+    CNPhoneNumber *num = [[CNPhoneNumber alloc]initWithStringValue:contactNumber];
+    CNLabeledValue * lab = [[CNLabeledValue alloc]initWithLabel:CNLabelPhoneNumberMobile value:num];
+    
+    newCon.phoneNumbers = @[lab];
     
     
     
     
-    CNContactViewController *newPicker = [[CNContactViewController alloc]init];
     
-    newPicker = [CNContactViewController viewControllerForNewContact:nil];
+        CNContactStore *store =[CNContactStore alloc];
+    CNSaveRequest * saveCon = [CNSaveRequest alloc];
+    [saveCon addContact:newCon toContainerWithIdentifier:nil];
+    BOOL saved = [store executeSaveRequest:saveCon error:&error];
+       @try{
+           if (saved == NO){
+           
+           
+           NSLog(@"failing");
+           
+               
+           }
+           
+           
+        if (error == nil){
+        
+            
+            
+            CNContactPickerViewController *picker =
+            [[CNContactPickerViewController alloc]init];
+            picker.delegate = self;
+            
+            [self presentViewController:picker animated:YES completion:nil];
+
+            
+            
+//            CNContactViewController *newPicker = [[CNContactViewController alloc]init];
+//            
+//            newPicker.delegate = self;
+//            
+//            newPicker = [CNContactViewController viewControllerForNewContact:nil];
+//            
+//            
+//            
+//            [self presentViewController:newPicker animated:YES completion:nil];
+//            
+//            
+            
+        
+        
+        }
+        
+        else{
+        
+            
+            UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Failed  to  save Contatcs" message:@"Save failed "  preferredStyle:UIAlertControllerStyleAlert];
+            
+            [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+                NSLog(@"test15");
+            }]];
+            
+            [self presentViewController:alert animated:YES completion:nil];
+            
+            NSLog(@"not Saved");
+            
+            
+
+        
+        
+        }
+        
+    }
+    @catch(NSException *exception){
+    
+        if (exception != nil){}
+        
+        
+        
+        NSLog(@"Error adding %@",exception);
+        
     
     
     
-    [self presentViewController:newPicker animated:YES completion:nil];
-    
-    [newPicker dismissViewControllerAnimated:YES completion:nil];
-    
-   //[self.navigationController pushViewController:newPicker animated:YES];
+    }
+
     
     
-    
-//    
-//    
-//    CNContactPickerViewController *picker =
-//    [[CNContactPickerViewController alloc]init];
-//    picker.delegate = self;
-//    
-//    [self presentViewController:picker animated:YES completion:nil];
+}
+- (IBAction)callAgent:(id)sender {
     
     
+    NSString * phNo = [self.item.agentNumber stringByReplacingOccurrencesOfString:@" " withString:@""];;
     
     
+    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"tel://%@",phNo]];
+    
+    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
+        [[UIApplication sharedApplication] openURL:phoneUrl];
+    } else
+    {
+        NSLog(@"Call not possible");
+        
+    }
+
 }
 @end
