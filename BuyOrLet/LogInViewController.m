@@ -77,16 +77,16 @@
     
     
     
-    
-    BOOL connect = [self connected];
-    if (!connect)
-        
-        NSLog(@" no internet");
-    
-    else
-        NSLog(@"internet working");
-    
-
+    // just to test internet connetion: not in use but for future use
+//    BOOL connect = [self connected];
+//    if (!connect)
+//        
+//        NSLog(@" no internet");
+//    
+//    else
+//        NSLog(@"internet working");
+//    
+//
     
     
     //***************** Only For Simulator Testing ***********************
