@@ -2918,7 +2918,7 @@
                   moduleName = "BuyOrLet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/tae/Documents/BuyOrLet/BuyOrLet/ResultsViewController.m"
-                  timestampString = "468162413.836046"
+                  timestampString = "468239122.930902"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "199"
@@ -2933,7 +2933,7 @@
                   moduleName = "BuyOrLet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/tae/Documents/BuyOrLet/BuyOrLet/ResultsViewController.m"
-                  timestampString = "468162413.836454"
+                  timestampString = "468239122.931175"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -2948,7 +2948,7 @@
                   moduleName = "BuyOrLet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/tae/Documents/BuyOrLet/BuyOrLet/ResultsViewController.m"
-                  timestampString = "468162413.836724"
+                  timestampString = "468239122.931434"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -4069,11 +4069,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
+            timestampString = "468238842.095426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "327"
-            endingLineNumber = "327"
+            startingLineNumber = "328"
+            endingLineNumber = "328"
             landmarkName = "-addContact:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4085,11 +4085,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468158357.252496"
+            timestampString = "468238842.095426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "255"
-            endingLineNumber = "255"
+            startingLineNumber = "256"
+            endingLineNumber = "256"
             landmarkName = "-addContact:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4101,39 +4101,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468158357.252496"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "266"
-            endingLineNumber = "266"
-            landmarkName = "-addContact:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "330"
-            endingLineNumber = "330"
-            landmarkName = "-addContact:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468158357.252496"
+            timestampString = "468238842.095426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "267"
@@ -4145,15 +4113,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "468238842.095426"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "331"
+            endingLineNumber = "331"
+            landmarkName = "-addContact:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "468238842.095426"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "268"
+            endingLineNumber = "268"
+            landmarkName = "-addContact:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
+            timestampString = "468238842.095426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "290"
-            endingLineNumber = "290"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
             landmarkName = "-addContact:"
             landmarkType = "5">
             <Locations>
@@ -4165,12 +4165,12 @@
                   moduleName = "BuyOrLet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/tae/Documents/BuyOrLet/BuyOrLet/DetailViewController.m"
-                  timestampString = "468162413.842166"
+                  timestampString = "468239122.936353"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "306"
-                  endingLineNumber = "306"
-                  offsetFromSymbolStart = "1012">
+                  startingLineNumber = "307"
+                  endingLineNumber = "307"
+                  offsetFromSymbolStart = "1057">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -4180,12 +4180,12 @@
                   moduleName = "BuyOrLet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/tae/Documents/BuyOrLet/BuyOrLet/DetailViewController.m"
-                  timestampString = "468162413.842448"
+                  timestampString = "468239122.93665"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "306"
-                  endingLineNumber = "306"
-                  offsetFromSymbolStart = "1020">
+                  startingLineNumber = "307"
+                  endingLineNumber = "307"
+                  offsetFromSymbolStart = "1065">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -4197,11 +4197,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
+            timestampString = "468238842.095426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "347"
-            endingLineNumber = "347"
+            startingLineNumber = "348"
+            endingLineNumber = "348"
             landmarkName = "-callAgent:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4213,23 +4213,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "349"
-            endingLineNumber = "349"
-            landmarkName = "-callAgent:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
+            timestampString = "468238842.095426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "350"
@@ -4245,11 +4229,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
+            timestampString = "468238842.095426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "352"
-            endingLineNumber = "352"
+            startingLineNumber = "351"
+            endingLineNumber = "351"
             landmarkName = "-callAgent:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4261,11 +4245,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
+            timestampString = "468238842.095426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "270"
-            endingLineNumber = "270"
+            startingLineNumber = "353"
+            endingLineNumber = "353"
+            landmarkName = "-callAgent:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "468238842.095426"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "271"
+            endingLineNumber = "271"
             landmarkName = "-addContact:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4277,11 +4277,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
+            timestampString = "468238842.095426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "268"
-            endingLineNumber = "268"
+            startingLineNumber = "269"
+            endingLineNumber = "269"
             landmarkName = "-addContact:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4293,11 +4293,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
+            timestampString = "468238842.095426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "270"
-            endingLineNumber = "270"
+            startingLineNumber = "271"
+            endingLineNumber = "271"
             landmarkName = "-addContact:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4309,23 +4309,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468158357.252496"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "257"
-            endingLineNumber = "257"
-            landmarkName = "-addContact:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468158357.252496"
+            timestampString = "468238842.095426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "258"
@@ -4341,75 +4325,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468158357.252496"
+            timestampString = "468238842.095426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "260"
-            endingLineNumber = "260"
-            landmarkName = "-addContact:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "274"
-            endingLineNumber = "274"
-            landmarkName = "-addContact:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "280"
-            endingLineNumber = "280"
-            landmarkName = "-addContact:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "311"
-            endingLineNumber = "311"
-            landmarkName = "-addContact:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "308"
-            endingLineNumber = "308"
+            startingLineNumber = "259"
+            endingLineNumber = "259"
             landmarkName = "-addContact:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4421,11 +4341,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
+            timestampString = "468238842.095426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "328"
-            endingLineNumber = "328"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
             landmarkName = "-addContact:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4437,11 +4357,91 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuyOrLet/DetailViewController.m"
-            timestampString = "468162143.940128"
+            timestampString = "468238842.095426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "340"
-            endingLineNumber = "340"
+            startingLineNumber = "275"
+            endingLineNumber = "275"
+            landmarkName = "-addContact:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "468238842.095426"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "281"
+            endingLineNumber = "281"
+            landmarkName = "-addContact:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "468238842.095426"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "312"
+            endingLineNumber = "312"
+            landmarkName = "-addContact:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "468238842.095426"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "309"
+            endingLineNumber = "309"
+            landmarkName = "-addContact:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "468238842.095426"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "329"
+            endingLineNumber = "329"
+            landmarkName = "-addContact:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "468238842.095426"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "341"
+            endingLineNumber = "341"
             landmarkName = "-addContact:"
             landmarkType = "5">
             <Locations>
@@ -4453,12 +4453,12 @@
                   moduleName = "BuyOrLet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/tae/Documents/BuyOrLet/BuyOrLet/DetailViewController.m"
-                  timestampString = "468162413.847633"
+                  timestampString = "468239122.943089"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "343"
-                  endingLineNumber = "343"
-                  offsetFromSymbolStart = "803">
+                  startingLineNumber = "344"
+                  endingLineNumber = "344"
+                  offsetFromSymbolStart = "848">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -4468,14 +4468,30 @@
                   moduleName = "BuyOrLet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/tae/Documents/BuyOrLet/BuyOrLet/DetailViewController.m"
-                  timestampString = "468162413.847894"
+                  timestampString = "468239122.943359"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "343"
-                  endingLineNumber = "343"
-                  offsetFromSymbolStart = "1599">
+                  startingLineNumber = "344"
+                  endingLineNumber = "344"
+                  offsetFromSymbolStart = "1644">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BuyOrLet/DetailViewController.m"
+            timestampString = "468238842.095426"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
+            landmarkName = "-addContact:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

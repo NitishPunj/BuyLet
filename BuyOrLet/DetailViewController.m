@@ -248,7 +248,8 @@ else
 - (IBAction)addContact:(id)sender {
    //Some issues with the Contatcs UI so not implemented
     
-    CNMutableContact * newCon = [CNMutableContact alloc];
+    CNMutableContact * newCon = [[CNMutableContact alloc]init];
+    
     newCon.givenName = self.item.agentName;
     NSError *error = NULL;
 NSString *contactNumber = [self.item.agentNumber stringByReplacingOccurrencesOfString:@" " withString:@""];
@@ -263,8 +264,8 @@ NSString *contactNumber = [self.item.agentNumber stringByReplacingOccurrencesOfS
     
     
     
-        CNContactStore *store =[CNContactStore alloc];
-    CNSaveRequest * saveCon = [CNSaveRequest alloc];
+        CNContactStore *store =[[CNContactStore alloc]init];
+    CNSaveRequest * saveCon = [[CNSaveRequest alloc]init];
     [saveCon addContact:newCon toContainerWithIdentifier:nil];
     BOOL saved = [store executeSaveRequest:saveCon error:&error];
        @try{
